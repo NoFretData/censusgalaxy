@@ -27,7 +27,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Geographies',
-          items: ['data/geographies/block-group'],
+          items: ['data/geographies/block-groups'],
         },
         {
           type: 'category',
