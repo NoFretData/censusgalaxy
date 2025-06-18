@@ -3,7 +3,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Quick Start Guide',
-      items: ['quick-start/quick-start-guide'],
+      items: ['quick-start/Quick Start Guide'],
     },
     {
       type: 'category',
@@ -27,7 +27,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Geographies',
-          items: ['data/geographies/block-groups'],
+          items: ['data/geographies/block-group'],
         },
         {
           type: 'category',
