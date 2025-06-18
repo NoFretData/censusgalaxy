@@ -1,5 +1,14 @@
-const sidebars = {
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+module.exports = {
   tutorialSidebar: [
+    'intro',
+    'demo',
+    'sample',
+    {
+      type: 'category',
+      label: 'Datasets',
+      items: ['datasets/index'],
+    },
     {
       type: 'category',
       label: 'Quick Start Guide',
@@ -38,6 +47,3 @@ const sidebars = {
     },
   ],
 };
-
-export default sidebars;
-
