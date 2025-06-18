@@ -84,7 +84,7 @@ const config = {
         title: 'Census Galaxy',
         logo: {
           alt: 'Census Galaxy Logo',
-          src: 'img/censuslogo.jpg',
+          src: 'img/censuslogo.png',
         },
         items: [
           {
