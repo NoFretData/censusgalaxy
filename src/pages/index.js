@@ -101,7 +101,7 @@ export default function Home() {
         <section className={styles.cta}>
           <div className="container text--center">
             <h2>Start exploring census data today</h2>
-            <Link className="button button--primary button--lg" to="/docs/category/datasets">
+            <Link className="button button--primary button--lg" to="/docs/datasets">
               Browse Datasets
             </Link>
           </div>
