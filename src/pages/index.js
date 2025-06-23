@@ -146,17 +146,17 @@ export default function Home() {
               {
                 title: 'Datasets',
                 description: 'ZIP code-level data including income, population, education, and more.',
-                link: '/docs/category/datasets'
+                link: '/docs/datasets'
               },
               {
                 title: 'Use Cases',
                 description: 'Examples and queries for ML, segmentation, planning, and analysis.',
-                link: '/docs/category/use-cases'
+                link: '/docs/use-cases'
               },
               {
                 title: 'Data Dictionary',
                 description: 'View field definitions and metadata for all dataset views.',
-                link: '/docs/category/data-dictionary'
+                link: '/docs/data-dictionary'
               }
             ].map((item, idx) => (
               <div key={idx} className="col col--4 margin-bottom--lg">
@@ -175,7 +175,7 @@ export default function Home() {
         {/* CTA */}
         <section className={`${styles.cta} margin-top--xl text--center`}>
           <h2>Ready to explore the data?</h2>
-          <Link className="button button--primary button--lg" to="/docs/category/datasets">
+          <Link className="button button--primary button--lg" to="/docs/datasets">
             View Available Datasets
           </Link>
         </section>
