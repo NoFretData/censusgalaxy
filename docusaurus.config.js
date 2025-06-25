@@ -159,6 +159,128 @@
 
 // 2 version after removing blog :
 
+// // @ts-check
+// import {themes as prismThemes} from 'prism-react-renderer';
+
+// /** @type {import('@docusaurus/types').Config} */
+// const config = {
+//   title: 'Census Galaxy',
+//   tagline: 'Documentation',
+//   favicon: 'img/favicon.ico',
+
+//   future: {
+//     v4: true,
+//   },
+
+//   url: 'https://arbazanalytics.github.io',
+//   baseUrl: '/censusgalaxy/',
+
+//   organizationName: 'ArbazAnalytics',
+//   projectName: 'censusgalaxy',
+
+//   onBrokenLinks: 'throw',
+//   onBrokenMarkdownLinks: 'warn',
+
+//   i18n: {
+//     defaultLocale: 'en',
+//     locales: ['en'],
+//   },
+
+//   presets: [
+//     [
+//       'classic',
+//       /** @type {import('@docusaurus/preset-classic').Options} */
+//       ({
+//         docs: {
+//           sidebarPath: './sidebars.js',
+//           editUrl:
+//             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+//         },
+//         blog: false, // ✅ Disabled blog completely
+//         theme: {
+//           customCss: './src/css/custom.css',
+//         },
+//       }),
+//     ],
+//   ],
+
+//   themeConfig:
+//     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+//     ({
+//       image: 'img/docusaurus-social-card.png',
+//       navbar: {
+//         title: 'Census Galaxy',
+//         logo: {
+//           alt: 'Census Galaxy Logo',
+//           src: 'img/censuslogo.png',
+//         },
+//         items: [
+//           {
+//             type: 'docSidebar',
+//             sidebarId: 'tutorialSidebar',
+//             position: 'left',
+//             label: 'Documentation',
+//           },
+//           {
+//             href: 'https://github.com/facebook/docusaurus',
+//             label: 'GitHub',
+//             position: 'right',
+//           },
+//         ],
+//       },
+//       footer: {
+//         style: 'dark',
+//         links: [
+//           {
+//             title: 'Docs',
+//             items: [
+//               {
+//                 label: 'Tutorial',
+//                 to: '/docs/intro',
+//               },
+//             ],
+//           },
+//           {
+//             title: 'Community',
+//             items: [
+//               {
+//                 label: 'Stack Overflow',
+//                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+//               },
+//               {
+//                 label: 'Discord',
+//                 href: 'https://discordapp.com/invite/docusaurus',
+//               },
+//               {
+//                 label: 'X',
+//                 href: 'https://x.com/docusaurus',
+//               },
+//             ],
+//           },
+//           {
+//             title: 'More',
+//             items: [
+//               {
+//                 label: 'GitHub',
+//                 href: 'https://github.com/facebook/docusaurus',
+//               },
+//             ],
+//           },
+//         ],
+//         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+//       },
+//       prism: {
+//         theme: prismThemes.github,
+//         darkTheme: prismThemes.dracula,
+//       },
+//     }),
+// };
+
+// export default config;
+
+
+// version 3 removing intro, sample, and demo
+
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
@@ -196,7 +318,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false, // ✅ Disabled blog completely
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -234,10 +356,8 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              // Removed intro/tutorial/demo/sample links
+              // Add other valid doc links here if needed
             ],
           },
           {
@@ -277,3 +397,4 @@ const config = {
 };
 
 export default config;
+
