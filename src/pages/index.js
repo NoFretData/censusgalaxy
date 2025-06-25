@@ -132,8 +132,8 @@ export default function Home() {
             <p className="hero__subtitle">
               Explore curated demographic and economic datasets for AI/ML, marketing, and planning.
             </p>
-            <Link className="button button--primary button--lg" to="/docs/intro">
-              Browse Documentation
+            <Link className="button button--primary button--lg" to="/docs/quick-start">
+              Quick Start
             </Link>
           </div>
         </section>
