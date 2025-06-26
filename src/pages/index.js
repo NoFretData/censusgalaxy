@@ -133,7 +133,7 @@ export default function Home() {
               Explore curated demographic and economic datasets for AI/ML, marketing, and planning.
             </p>
             <Link className="button button--primary button--lg" to="/docs/quick-start-guide">
-              Quick Start
+              Quick Start Guide
             </Link>
           </div>
         </section>
