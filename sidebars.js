@@ -10,7 +10,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Quick Start Guide',
-      items: ['quick-start/quick-start-guide'],
+      items: ['quick-start-guide'],
     },
     {
       type: 'category',
