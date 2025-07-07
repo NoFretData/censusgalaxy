@@ -175,9 +175,12 @@
 }
 
 .heroImage {
-  max-width: 100%;
+  max-width: 220px;
+  margin: 0 auto 1.5rem;
+  display: block;
   height: auto;
 }
+
 
 /* Modules Section */
 .moduleSection {
