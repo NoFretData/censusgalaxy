@@ -256,8 +256,8 @@ export default function Home() {
               </div>
               <div className="col col--6 text--center">
                 <img
-                  src="/img/data-dashboard.svg"
-                  alt="Census Galaxy Illustration"
+                  src="/img/censuslogo.png"
+                  alt="Census Galaxy Logo"
                   className={styles.heroImage}
                 />
               </div>
