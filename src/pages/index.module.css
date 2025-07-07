@@ -113,7 +113,7 @@
 } */
 
 
-.heroSection {
+/* .heroSection {
   padding: 4rem 0;
   background-color: #f9fafb;
 }
@@ -143,4 +143,92 @@
 }
 .card:hover {
   transform: translateY(-4px);
+} */
+
+/* Hero Section 3 */
+.heroSection {
+  padding: 5rem 0 4rem;
+  background-color: #f9f9fb;
 }
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #555;
+  max-width: 500px;
+}
+
+.heroButtons {
+  margin-top: 2rem;
+}
+
+.heroButtons .button {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Modules Section */
+.moduleSection {
+  padding: 4rem 0;
+}
+
+.moduleCard {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.moduleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.moduleCard h3 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.moduleCard p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta {
+  background-color: #f2f9f8;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta .button {
+  font-size: 1.1rem;
+}
+
