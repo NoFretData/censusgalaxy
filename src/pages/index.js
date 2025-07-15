@@ -254,16 +254,20 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="col col--6 text--center">
-                <img
-                  src="/img/censuslogo1.png"
-                  alt="Census Galaxy Logo"
-                  className={styles.heroImage}
-                />
+
+              <div className="col col--6">
+                <div className={styles.heroImageContainer}>
+                  <img
+                    src="/img/hero-right.jpg"
+                    alt="Hero Illustration"
+                    className={styles.heroImage}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Modules Section */}
         <section className={`container ${styles.moduleSection}`}>
