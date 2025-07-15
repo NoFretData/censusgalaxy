@@ -256,7 +256,7 @@ export default function Home() {
               </div>
               <div className="col col--6 text--center">
                 <img
-                  src="/img/censuslogo.png"
+                  src="/img/censuslogo1.jpg"
                   alt="Census Galaxy Logo"
                   className={styles.heroImage}
                 />
