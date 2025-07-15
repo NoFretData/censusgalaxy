@@ -258,8 +258,8 @@ export default function Home() {
               <div className="col col--6">
                 <div className={styles.heroImageContainer}>
                   <img
-                    src="/img/hero-right.jpg"
-                    alt="Hero Illustration"
+                    src="/img/image_trial.png"
+                    alt="Hero Illustration_2"
                     className={styles.heroImage}
                   />
                 </div>
