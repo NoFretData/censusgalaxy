@@ -175,12 +175,11 @@
 }
 
 .heroImage {
-  max-width: 220px;
-  margin: 0 auto 1.5rem;
-  display: block;
+  max-width: 100%;  /* Or a fixed size like 300px */
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
-
 
 /* Modules Section */
 .moduleSection {
