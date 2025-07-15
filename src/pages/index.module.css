@@ -175,7 +175,8 @@
 }
 
 .heroImage {
-  max-width: 100%;  /* Or a fixed size like 300px */
+  max-width: 100%;
+  width: 360px;     /* Or any width that fits nicely */
   height: auto;
   margin: 0 auto;
   display: block;
