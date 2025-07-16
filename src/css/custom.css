@@ -84,6 +84,31 @@
   font-weight: 500;
 } */
 
+
+/* Make sidebar items bigger and spaced */
+.theme-doc-sidebar-menu li a {
+  font-size: 1.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.theme-doc-sidebar-menu li {
+  margin-bottom: 4px;
+}
+
+/* Make headings (category labels) bolder and spaced */
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.9rem 1rem;
+}
+
+/* Add hover effect */
+.theme-doc-sidebar-menu a:hover {
+  background-color: #f2f4f7;
+  border-radius: 8px;
+}
+
+
 /* Wider spacing for sidebar items */
 .menu__link {
   padding: 0.75rem 1.5rem;
