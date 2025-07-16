@@ -228,6 +228,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 export default function Home() {
   return (
@@ -258,8 +260,8 @@ export default function Home() {
               <div className="col col--6">
                 <div className={styles.heroImageContainer}>
                   <img
-                    src="/img/image_trial.png"
-                    alt="Hero Illustration_2"
+                    src={useBaseUrl('/img/hero-right.jpg')}
+                    alt="Hero Illustration"
                     className={styles.heroImage}
                   />
                 </div>
