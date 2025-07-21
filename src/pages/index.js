@@ -284,7 +284,7 @@ export default function Home() {
               {
                 title: 'Data',
                 description: 'Learn about the metrics, percentages, and percentiles used in Census Galaxy datasets.',
-                link: '/docs/data.md',
+                link: '/docs/data/index.md',
               },
               {
                 title: 'Geography Nuances',
