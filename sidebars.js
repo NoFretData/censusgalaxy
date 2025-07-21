@@ -102,9 +102,9 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
   tutorialSidebar: [
-    {
+      {
       type: 'doc',
-      id: 'quick-start-user-guide',
+      id: 'quick-start-guide',
       label: 'Quick Start + User Guide',
     },
     {
