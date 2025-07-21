@@ -249,10 +249,10 @@ export default function Home() {
                 </p>
                 <div className={styles.heroButtons}>
                   <Link className="button button--primary button--lg" to="/docs/quick-start-guide">
-                    Quick Start Guide
+                    Quick Start + User Guide
                   </Link>
-                  <Link className="button button--secondary button--lg" to="/docs/datasets">
-                    View Datasets
+                  <Link className="button button--secondary button--lg" to="/docs/geographies">
+                    Geographies Overview
                   </Link>
                 </div>
               </div>
@@ -277,19 +277,19 @@ export default function Home() {
           <div className="row">
             {[
               {
-                title: 'Datasets',
-                description: 'ZIP code-level data including income, population, education, and more.',
-                link: '/docs/datasets',
+                title: 'Demographic Explanation',
+                description: 'Understand the structure and details of demographic data fields.',
+                link: '/docs/data/demographic-explanation',
               },
               {
-                title: 'Use Cases',
-                description: 'Examples and queries for ML, segmentation, planning, and analysis.',
-                link: '/docs/use-cases',
+                title: 'Data',
+                description: 'Learn about the metrics, percentages, and percentiles used in Census Galaxy datasets.',
+                link: '/docs/data',
               },
               {
-                title: 'Data Dictionary',
-                description: 'View field definitions and metadata for all dataset views.',
-                link: '/docs/data-dictionary',
+                title: 'Geography Nuances',
+                description: 'Dive into data-geography nuances: definitions, boundaries, and regional variations.',
+                link: '/docs/data-geography-nuances',
               },
             ].map((item, idx) => (
               <div key={idx} className="col col--4 margin-bottom--lg">
