@@ -307,9 +307,9 @@ export default function Home() {
 
         {/* CTA Section */}
         <section className={`${styles.cta} text--center margin-top--xl`}>
-          <h2>Ready to explore the data?</h2>
-          <Link className="button button--primary button--lg" to="/docs/datasets">
-            View Available Datasets
+          <h2>Ready to get started?</h2>
+          <Link className="button button--primary button--lg" to="/docs/quick-start-guide">
+            Open Quick Start + User Guide
           </Link>
         </section>
 
