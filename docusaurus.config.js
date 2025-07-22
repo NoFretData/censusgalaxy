@@ -331,10 +331,10 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.png',
       navbar: {
-        title: 'Census Galaxy',
+        title: '',
         logo: {
           alt: 'Census Galaxy Logo',
-          src: 'img/censuslogo.png',
+          src: 'img/Logo Text Light.png',
         },
         items: [
           {
