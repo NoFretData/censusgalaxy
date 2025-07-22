@@ -260,7 +260,7 @@ export default function Home() {
               <div className="col col--6">
                 <div className={styles.heroImageContainer}>
                   <img
-                    src={useBaseUrl('/img/hero-right.jpg')}
+                    src={useBaseUrl('/img/Logo Icon Dark.png')}
                     alt="Hero Illustration"
                     className={styles.heroImage}
                   />
@@ -282,7 +282,7 @@ export default function Home() {
                 link: '/docs/data/demographic-explanation',
               },
               {
-                title: 'Data',
+                title: 'Metrics',
                 description: 'Learn about the metrics, percentages, and percentiles used in Census Galaxy datasets.',
                 link: '/docs/data/metrics',
               },
