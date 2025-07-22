@@ -1,8 +1,8 @@
 ---
-      id: 'geographies',
-      label: 'Geographies',
+id: geographies
+title: Geographies
+sidebar_label: Geographies
 ---
-
 
 import '../styles/satoshi.css'
 
