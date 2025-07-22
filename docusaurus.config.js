@@ -316,7 +316,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ArbazAnalytics/censusgalaxy',
         },
         blog: false,
         theme: {
@@ -344,7 +344,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ArbazAnalytics/censusgalaxy',
             label: 'GitHub',
             position: 'right',
           },
@@ -364,8 +364,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Census Galaxy',
+                href: 'https://censusgalaxy.framer.website/',
               },
               {
                 label: 'Discord',
@@ -382,7 +382,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ArbazAnalytics/censusgalaxy',
               },
             ],
           },
