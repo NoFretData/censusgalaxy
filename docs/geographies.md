@@ -1,28 +1,27 @@
 ---
 id: geographies
 title: Geographies
-sidebar_label: Geographies
 ---
-
-import '../styles/satoshi.css'
 
 # Geographies Overview
 
-## Blockgroup
+## Block Groups
 
 A Block Group is the smallest geography for which the U.S. Census Bureau publishes sample data. It typically includes 600 to 3,000 people and nests within a Census Tract. There are around 242,000 Block Groups in the United States.
 
-Ideal for fine-grained demographic targeting and local equity analysis (e.g., identifying underserved areas or planning hyper-local outreach).
+Use when:
+- Fine-grained demographic targeting and local equity analysis (e.g., identifying underserved areas or planning hyper-local outreach).
+- Working with sensitive population indicators like income, race, or education at a neighborhood scale.
 
-Useful when working with sensitive population indicators like income, race, or education at a neighborhood scale.
+### Field Summary
 
-<table class="hasura-table">
-  <thead>
+<table style={{ fontFamily: 'Satoshi, sans-serif', width: '100%', borderCollapse: 'collapse' }}>
+  <thead style={{ background: '#f6f8fa' }}>
     <tr>
-      <th>Column Name</th>
-      <th>Type</th>
-      <th>Example</th>
-      <th>Description</th>
+      <th style={{ padding: '8px', textAlign: 'left' }}><strong>Field</strong></th>
+      <th style={{ padding: '8px', textAlign: 'left' }}><strong>Type</strong></th>
+      <th style={{ padding: '8px', textAlign: 'left' }}><strong>Example</strong></th>
+      <th style={{ padding: '8px', textAlign: 'left' }}><strong>Description</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -49,7 +48,10 @@ Useful when working with sensitive population indicators like income, race, or e
     <tr><td><strong>GeographyYear</strong></td><td>VARCHAR</td><td>2023</td><td>The year associated with the geographic boundaries.</td></tr>
     <tr><td><strong>BlockGroupCentroidLat</strong></td><td>VARCHAR</td><td>47.8399498</td><td>Latitude of the block group centroid.</td></tr>
     <tr><td><strong>BlockGroupCentroidLon</strong></td><td>VARCHAR</td><td>-90.9493178</td><td>Longitude of the block group centroid.</td></tr>
-    <tr><td><strong>BlockGroupCentroidPoints</strong></td><td>VARCHAR</td><td>{"type":"Point",...}</td><td>GeoJSON representation of the block group centroid.</td></tr>
-    <tr><td><strong>BlockGroupPolygon</strong></td><td>VARCHAR</td><td>{"type":"Polygon",...}</td><td>GeoJSON representation of the full boundary of the block group.</td></tr>
+    <tr><td><strong>BlockGroupCentroidPoints</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Point&quot;, ...&#125;</code></td><td>GeoJSON representation of the block group centroid.</td></tr>
+    <tr><td><strong>BlockGroupPolygon</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Polygon&quot;, ...&#125;</code></td><td>GeoJSON representation of the full boundary of the block group.</td></tr>
   </tbody>
 </table>
+
+
+
