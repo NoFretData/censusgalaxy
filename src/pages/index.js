@@ -260,7 +260,7 @@ export default function Home() {
               <div className="col col--6">
                 <div className={styles.heroImageContainer}>
                   <img
-                    src={useBaseUrl('/img/Logo Icon Dark.png')}
+                    src={useBaseUrl('/img/Logo Icon Light.png')}
                     alt="Hero Illustration"
                     className={styles.heroImage}
                   />

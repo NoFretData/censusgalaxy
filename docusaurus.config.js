@@ -288,7 +288,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Census Galaxy',
   tagline: 'Documentation',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Logo Icon Light.svg',
 
   future: {
     v4: true,
