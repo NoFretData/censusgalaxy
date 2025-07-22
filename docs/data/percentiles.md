@@ -1,7 +1,4 @@
----
-id: percentiles
-title: Percentiles
----
+
 
 
 ## Percentiles
