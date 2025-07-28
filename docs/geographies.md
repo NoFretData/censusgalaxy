@@ -5,7 +5,8 @@ title: Geographies
 
 # Geographies Overview
 
-## Block Groups
+<details>
+<summary><strong>Block Groups</strong></summary>
 
 A Block Group is the smallest geography for which the U.S. Census Bureau publishes sample data. It typically includes 600 to 3,000 people and nests within a Census Tract. There are around 242,000 Block Groups in the United States.
 
