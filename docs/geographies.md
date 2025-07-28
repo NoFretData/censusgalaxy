@@ -5,7 +5,7 @@ title: Geographies
 
 # Geographies Overview
 
-<details>
+<details open>
   <summary><strong>Block Groups</strong></summary>
 
   <div>
@@ -61,53 +61,59 @@ title: Geographies
 
 
 ---
+<details open>
+  <summary><strong>Tracts</strong></summary>
 
-## Tracts
+  <div>
 
-Census Tracts are statistical subdivisions of counties designed to be relatively permanent and consistent across time. Each tract contains 1,200 to 8,000 people (average ~4,000). There are about 85,000 Census Tracts nationwide.
 
-Use when:
-- Neighborhood-level trends in housing, poverty, or commute patterns — especially when privacy or stability is a concern.
-- Often used in federal programs and grants (e.g., CDBG eligibility, Opportunity Zones).
+  Census Tracts are statistical subdivisions of counties designed to be relatively permanent and consistent across time. Each tract contains 1,200 to 8,000 people (average ~4,000). There are about 85,000 Census Tracts nationwide.
 
-### Field Summary
+  Use when:
+  - Neighborhood-level trends in housing, poverty, or commute patterns — especially when privacy or stability is a concern.
+  - Often used in federal programs and grants (e.g., CDBG eligibility, Opportunity Zones).
 
-<table style={{ fontFamily: 'Satoshi, sans-serif', width: '100%', borderCollapse: 'collapse' }}>
-  <thead style={{ background: '#f6f8fa' }}>
-    <tr>
-      <th><strong>Field</strong></th>
-      <th><strong>Type</strong></th>
-      <th><strong>Example</strong></th>
-      <th><strong>Description</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>StateCountyTractID</strong></td><td>VARCHAR</td><td>6023000800</td><td>Unique identifier combining state (2), county (3), and tract (6) FIPS codes.</td></tr>
-    <tr><td><strong>StateFIPS</strong></td><td>VARCHAR</td><td>6</td><td>Two-digit FIPS code for the state.</td></tr>
-    <tr><td><strong>StateName</strong></td><td>VARCHAR</td><td>California</td><td>Full name of the state.</td></tr>
-    <tr><td><strong>StateAbbrev</strong></td><td>VARCHAR</td><td>CA</td><td>Two-letter USPS state abbreviation.</td></tr>
-    <tr><td><strong>CountyFIPS</strong></td><td>VARCHAR</td><td>23</td><td>Three-digit FIPS code for the county.</td></tr>
-    <tr><td><strong>CountyName</strong></td><td>VARCHAR</td><td>Humboldt</td><td>Name of the county.</td></tr>
-    <tr><td><strong>CountyFullName</strong></td><td>VARCHAR</td><td>Humboldt County</td><td>Full name of the county.</td></tr>
-    <tr><td><strong>StateCountyID</strong></td><td>VARCHAR</td><td>6023</td><td>Combination of StateFIPS and CountyFIPS.</td></tr>
-    <tr><td><strong>TractFIPS</strong></td><td>VARCHAR</td><td>800</td><td>Six-digit tract identifier within the county.</td></tr>
-    <tr><td><strong>TractName</strong></td><td>VARCHAR</td><td>Census Tract 800</td><td>Friendly tract label.</td></tr>
-    <tr><td><strong>MSA_ID</strong></td><td>VARCHAR</td><td>21700</td><td>Metropolitan Statistical Area code, if applicable.</td></tr>
-    <tr><td><strong>CSA_ID</strong></td><td>VARCHAR</td><td>null</td><td>Combined Statistical Area code, if applicable.</td></tr>
-    <tr><td><strong>MSAName</strong></td><td>VARCHAR</td><td>Eureka-Arcata, CA</td><td>Informal MSA name.</td></tr>
-    <tr><td><strong>MSALegalName</strong></td><td>VARCHAR</td><td>Eureka-Arcata, CA Micro Area</td><td>Legal name of the MSA.</td></tr>
-    <tr><td><strong>TotalAreaSqMiles</strong></td><td>NUMBER</td><td>9.5762</td><td>Total area of the tract in square miles.</td></tr>
-    <tr><td><strong>LandSqMiles</strong></td><td>NUMBER</td><td>6.0166</td><td>Land area of the tract in square miles.</td></tr>
-    <tr><td><strong>WaterSqMiles</strong></td><td>NUMBER</td><td>3.5596</td><td>Water area of the tract in square miles.</td></tr>
-    <tr><td><strong>LandSqMeters</strong></td><td>NUMBER</td><td>15582948</td><td>Land area in square meters.</td></tr>
-    <tr><td><strong>WaterSqMeters</strong></td><td>NUMBER</td><td>9219305</td><td>Water area in square meters.</td></tr>
-    <tr><td><strong>Geography Year</strong></td><td>VARCHAR</td><td>2023</td><td>The vintage of the tract boundary data.</td></tr>
-    <tr><td><strong>TractCentroidLat</strong></td><td>VARCHAR</td><td>40.8076485</td><td>Latitude of the tract's centroid.</td></tr>
-    <tr><td><strong>TractCentroidLon</strong></td><td>VARCHAR</td><td>-124.1112674</td><td>Longitude of the tract's centroid.</td></tr>
-    <tr><td><strong>TractCentroidPoints</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Point&quot;, ...&#125;</code></td><td>GeoJSON object for the tract's centroid.</td></tr>
-    <tr><td><strong>TractPolygon</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Polygon&quot;, ...&#125;</code></td><td>GeoJSON object for the tract's full polygon boundary.</td></tr>
-  </tbody>
-</table>
+  ### Field Summary
+
+  <table style={{ fontFamily: 'Satoshi, sans-serif', width: '100%', borderCollapse: 'collapse' }}>
+    <thead style={{ background: '#f6f8fa' }}>
+      <tr>
+        <th><strong>Field</strong></th>
+        <th><strong>Type</strong></th>
+        <th><strong>Example</strong></th>
+        <th><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>StateCountyTractID</strong></td><td>VARCHAR</td><td>6023000800</td><td>Unique identifier combining state (2), county (3), and tract (6) FIPS codes.</td></tr>
+      <tr><td><strong>StateFIPS</strong></td><td>VARCHAR</td><td>6</td><td>Two-digit FIPS code for the state.</td></tr>
+      <tr><td><strong>StateName</strong></td><td>VARCHAR</td><td>California</td><td>Full name of the state.</td></tr>
+      <tr><td><strong>StateAbbrev</strong></td><td>VARCHAR</td><td>CA</td><td>Two-letter USPS state abbreviation.</td></tr>
+      <tr><td><strong>CountyFIPS</strong></td><td>VARCHAR</td><td>23</td><td>Three-digit FIPS code for the county.</td></tr>
+      <tr><td><strong>CountyName</strong></td><td>VARCHAR</td><td>Humboldt</td><td>Name of the county.</td></tr>
+      <tr><td><strong>CountyFullName</strong></td><td>VARCHAR</td><td>Humboldt County</td><td>Full name of the county.</td></tr>
+      <tr><td><strong>StateCountyID</strong></td><td>VARCHAR</td><td>6023</td><td>Combination of StateFIPS and CountyFIPS.</td></tr>
+      <tr><td><strong>TractFIPS</strong></td><td>VARCHAR</td><td>800</td><td>Six-digit tract identifier within the county.</td></tr>
+      <tr><td><strong>TractName</strong></td><td>VARCHAR</td><td>Census Tract 800</td><td>Friendly tract label.</td></tr>
+      <tr><td><strong>MSA_ID</strong></td><td>VARCHAR</td><td>21700</td><td>Metropolitan Statistical Area code, if applicable.</td></tr>
+      <tr><td><strong>CSA_ID</strong></td><td>VARCHAR</td><td>null</td><td>Combined Statistical Area code, if applicable.</td></tr>
+      <tr><td><strong>MSAName</strong></td><td>VARCHAR</td><td>Eureka-Arcata, CA</td><td>Informal MSA name.</td></tr>
+      <tr><td><strong>MSALegalName</strong></td><td>VARCHAR</td><td>Eureka-Arcata, CA Micro Area</td><td>Legal name of the MSA.</td></tr>
+      <tr><td><strong>TotalAreaSqMiles</strong></td><td>NUMBER</td><td>9.5762</td><td>Total area of the tract in square miles.</td></tr>
+      <tr><td><strong>LandSqMiles</strong></td><td>NUMBER</td><td>6.0166</td><td>Land area of the tract in square miles.</td></tr>
+      <tr><td><strong>WaterSqMiles</strong></td><td>NUMBER</td><td>3.5596</td><td>Water area of the tract in square miles.</td></tr>
+      <tr><td><strong>LandSqMeters</strong></td><td>NUMBER</td><td>15582948</td><td>Land area in square meters.</td></tr>
+      <tr><td><strong>WaterSqMeters</strong></td><td>NUMBER</td><td>9219305</td><td>Water area in square meters.</td></tr>
+      <tr><td><strong>Geography Year</strong></td><td>VARCHAR</td><td>2023</td><td>The vintage of the tract boundary data.</td></tr>
+      <tr><td><strong>TractCentroidLat</strong></td><td>VARCHAR</td><td>40.8076485</td><td>Latitude of the tract's centroid.</td></tr>
+      <tr><td><strong>TractCentroidLon</strong></td><td>VARCHAR</td><td>-124.1112674</td><td>Longitude of the tract's centroid.</td></tr>
+      <tr><td><strong>TractCentroidPoints</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Point&quot;, ...&#125;</code></td><td>GeoJSON object for the tract's centroid.</td></tr>
+      <tr><td><strong>TractPolygon</strong></td><td>VARCHAR</td><td><code>&#123;&quot;type&quot;:&quot;Polygon&quot;, ...&#125;</code></td><td>GeoJSON object for the tract's full polygon boundary.</td></tr>
+    </tbody>
+  </table>
+
+  </div>
+</details>
 
 ---
 
