@@ -35,6 +35,7 @@
  */
 
 /* Font: Inter (Hasura uses it) */
+/* Font: Inter (Hasura uses it) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -169,22 +170,28 @@ details[open] {
 /* Hide the default arrow completely */
 details > summary {
   background: none !important;
-  list-style: none;
+  list-style: none !important;
   padding: 0.5rem 0;
   cursor: pointer;
   position: relative;
 }
 
-/* Remove all default markers */
+/* Remove all default markers - more aggressive approach */
 details > summary::-webkit-details-marker {
-  display: none;
+  display: none !important;
 }
 
 details > summary::marker {
-  display: none;
+  display: none !important;
+  content: none !important;
 }
 
-/* Create custom arrow on the right side */
+/* Force hide any list-style */
+details > summary {
+  list-style-type: none !important;
+}
+
+/* Create custom arrow on the right side - bigger and blue */
 details > summary::after {
   content: '▶';
   position: absolute;
@@ -192,8 +199,9 @@ details > summary::after {
   top: 50%;
   transform: translateY(-50%);
   transition: transform 0.2s ease;
-  font-size: 0.8em;
-  color: #666;
+  font-size: 1.2em;
+  color: #1ebba6;
+  font-weight: bold;
 }
 
 /* Rotate arrow when expanded */
