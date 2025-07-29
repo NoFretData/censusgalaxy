@@ -155,9 +155,22 @@ code {
   border-radius: 4px;
 }
 
-/* Remove default blue background on open <details> */
+/* Remove default blue highlight for <details>/<summary> */
+details > summary {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 details[open] > summary {
   background: none !important;
-  color: inherit;
 }
+
+details > summary:focus,
+details > summary:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
