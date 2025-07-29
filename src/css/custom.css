@@ -177,5 +177,17 @@ details[open] > summary {
   background: none !important;
 }
 
+details > summary {
+  display: flex;
+  justify-content: space-between; /* pushes arrow to the far right */
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  order: 1; /* moves marker to the right */
+  margin-left: auto;
+}
 
 
