@@ -156,21 +156,26 @@ code {
 }
 
 /* Remove default blue highlight for <details>/<summary> */
+details {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+details[open] {
+  background: none !important;
+}
+
 details > summary {
   background: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  list-style: none; /* removes arrow style */
+  padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 details[open] > summary {
   background: none !important;
 }
 
-details > summary:focus,
-details > summary:active {
-  background: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
 
 
