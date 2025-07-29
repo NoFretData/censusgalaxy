@@ -167,18 +167,22 @@ details[open] {
   background: none !important;
 }
 
-/* Hide the default arrow completely */
+/* Hide the default arrow completely - super aggressive approach */
 details > summary {
   background: none !important;
   list-style: none !important;
   padding: 0.5rem 0;
   cursor: pointer;
   position: relative;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
-/* Remove all default markers - more aggressive approach */
+/* Remove ALL possible default markers */
 details > summary::-webkit-details-marker {
   display: none !important;
+  content: none !important;
 }
 
 details > summary::marker {
@@ -186,22 +190,33 @@ details > summary::marker {
   content: none !important;
 }
 
-/* Force hide any list-style */
+details > summary::-moz-list-bullet {
+  display: none !important;
+}
+
+/* Force hide any list-style with multiple approaches */
 details > summary {
   list-style-type: none !important;
+  list-style: none !important;
+  list-style-image: none !important;
+  list-style-position: outside !important;
+}
+
+/* Make sure the content takes up available space */
+details > summary > * {
+  flex: 1;
 }
 
 /* Create custom arrow on the right side - bigger and blue */
 details > summary::after {
   content: '▶';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  flex-shrink: 0;
+  margin-left: 1rem;
   transition: transform 0.2s ease;
   font-size: 1.2em;
   color: #1ebba6;
   font-weight: bold;
+  line-height: 1;
 }
 
 /* Rotate arrow when expanded */
