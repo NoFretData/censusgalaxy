@@ -54,7 +54,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
 }
 
-/* Dark mode */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -67,26 +66,17 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Navbar style */
+/* Typography and layout tweaks */
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* Navbar links */
 .navbar__link {
   font-weight: 500;
   font-size: 14.5px;
 }
 
-/* Sidebar menu */
-/* .menu__link {
-  font-size: 15px;
-  font-weight: 500;
-} */
-
-
-/* Make sidebar items bigger and spaced */
 .theme-doc-sidebar-menu li a {
   font-size: 1.05rem;
   padding: 0.75rem 1rem;
@@ -96,21 +86,17 @@
   margin-bottom: 4px;
 }
 
-/* Make headings (category labels) bolder and spaced */
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.9rem 1rem;
 }
 
-/* Add hover effect */
 .theme-doc-sidebar-menu a:hover {
   background-color: #f2f4f7;
   border-radius: 8px;
 }
 
-
-/* Wider spacing for sidebar items */
 .menu__link {
   padding: 0.75rem 1.5rem;
   font-size: 15.5px;
@@ -125,12 +111,10 @@ h1, h2, h3, h4 {
   font-family: 'Satoshi-Bold', sans-serif;
   font-weight: 600;
 }
-
 h1 { font-size: 1.8rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.1rem; }
-
 
 /* Paragraphs */
 p {
@@ -156,7 +140,12 @@ code {
   border-radius: 4px;
 }
 
-/* FIXED: Remove default blue highlight for <details>/<summary> with right-aligned arrow */
+/* ----------------------------- */
+/*       COLLAPSIBLE STYLES     */
+/* ----------------------------- */
+
+/* OPTIONAL: Add class="geo-section" to <details> if you want scoped styles */
+
 details {
   background: none !important;
   border: none !important;
@@ -167,63 +156,46 @@ details[open] {
   background: none !important;
 }
 
-/* Hide the default arrow completely - super aggressive approach */
 details > summary {
-  background: none !important;
   list-style: none !important;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  list-style-position: outside !important;
+  background: none !important;
   padding: 0.5rem 0;
   cursor: pointer;
   position: relative;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
-/* Remove ALL possible default markers */
+/* ✅ Remove native arrows completely (ALL browsers) */
 details > summary::-webkit-details-marker {
   display: none !important;
   content: none !important;
 }
-
 details > summary::marker {
   display: none !important;
-  content: none !important;
 }
-
 details > summary::-moz-list-bullet {
   display: none !important;
 }
 
-/* Force hide any list-style with multiple approaches */
-details > summary {
-  list-style-type: none !important;
-  list-style: none !important;
-  list-style-image: none !important;
-  list-style-position: outside !important;
-}
-
-/* Make sure the content takes up available space */
-details > summary > * {
-  flex: 1;
-}
-
-/* Create custom arrow on the right side - bigger and blue */
+/* ✅ Custom arrow */
 details > summary::after {
   content: '▶';
-  flex-shrink: 0;
-  margin-left: 1rem;
-  transition: transform 0.2s ease;
+  margin-left: 0.75rem;
   font-size: 1.2em;
   color: #1ebba6;
   font-weight: bold;
-  line-height: 1;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
-/* Rotate arrow when expanded */
+/* ✅ Rotate arrow when expanded */
 details[open] > summary::after {
-  transform: translateY(-50%) rotate(90deg);
-}
-
-details[open] > summary {
-  background: none !important;
+  transform: rotate(90deg);
 }

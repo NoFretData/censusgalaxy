@@ -286,8 +286,6 @@ title: Geographies
 
 # Geographies Overview
 
-##Block Groups
-
 <details open>
   <summary><strong>Block Groups</strong></summary>
 
