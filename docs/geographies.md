@@ -286,6 +286,11 @@ title: Geographies
 
 # Geographies Overview
 
+<div style="display:none">
+
+## Block Groups
+</div>
+
 <details open>
   <summary><strong>Block Groups</strong></summary>
 
@@ -340,8 +345,13 @@ title: Geographies
   </div>
 </details>
 
-
 ---
+
+<div style="display:none">
+
+## ZIP Code
+</div>
+
 <details open>
   <summary><strong>Tracts</strong></summary>
 
@@ -396,9 +406,14 @@ title: Geographies
   </div>
 </details>
 
+
 ---
 
-<details>
+<div style="display:none">
+## ZIP Code
+</div>
+
+<details open>
   <summary><strong>ZIP Code</strong></summary>
 
   <div>
@@ -437,10 +452,13 @@ title: Geographies
 
   </div>
 </details>
-
+<div style="display:none">
 ---
+<div style="display:none">
 
-<details>
+## County
+</div>
+<details open>
   <summary><strong>County</strong></summary>
 
   <div>
@@ -490,8 +508,12 @@ title: Geographies
 </details>
 
 ---
+<div style="display:none">
 
-<details>
+## Metropolitan Statistical Areas (MSAs)
+</div>
+
+<details open>
   <summary><strong>Metropolitan Statistical Areas (MSAs)</strong></summary>
 
   <div>
@@ -534,9 +556,14 @@ title: Geographies
   </div>
 </details>
 
----
 
-<details>
+---
+<div style="display:none">
+
+## States
+</div>
+
+<details open>
   <summary><strong>States</strong></summary>
 
   <div>
