@@ -36,6 +36,7 @@
 
 /* Font: Inter (Hasura uses it) */
 /* Font: Inter (Hasura uses it) */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -66,7 +67,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Typography and layout tweaks */
+/* Navbar & Sidebar tweaks */
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid #e0e0e0;
@@ -144,8 +145,7 @@ code {
 /*       COLLAPSIBLE STYLES     */
 /* ----------------------------- */
 
-/* OPTIONAL: Add class="geo-section" to <details> if you want scoped styles */
-
+/* Use native arrow only — no custom markers or flex layout */
 details {
   background: none !important;
   border: none !important;
@@ -156,46 +156,17 @@ details[open] {
   background: none !important;
 }
 
-details > summary {
-  list-style: none !important;
-  list-style-type: none !important;
-  list-style-image: none !important;
-  list-style-position: outside !important;
-  background: none !important;
+summary {
+  list-style: inherit;
   padding: 0.5rem 0;
   cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-weight: 600;
   font-size: 1.25rem;
+  /* ❌ DO NOT use display: flex — it breaks native arrow */
 }
 
-/* ✅ Remove native arrows completely (ALL browsers) */
-details > summary::-webkit-details-marker {
-  display: none !important;
-  content: none !important;
-}
-details > summary::marker {
-  display: none !important;
-}
-details > summary::-moz-list-bullet {
-  display: none !important;
-}
-
-/* ✅ Custom arrow */
-details > summary::after {
-  content: '▶';
-  margin-left: 0.75rem;
-  font-size: 1.2em;
-  color: #1ebba6;
-  font-weight: bold;
-  transition: transform 0.2s ease;
-  flex-shrink: 0;
-}
-
-/* ✅ Rotate arrow when expanded */
-details[open] > summary::after {
-  transform: rotate(90deg);
+/* ✅ DO NOT override native markers or add custom ones */
+summary::marker,
+summary::-webkit-details-marker {
+  /* Leave these alone to preserve default arrow */
 }
