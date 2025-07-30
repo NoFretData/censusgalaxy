@@ -282,9 +282,8 @@ Use when:
 ---
 id: geographies
 title: Geographies
+sidebar_label: Geographies
 ---
-
-# Geographies Overview
 
 <span style={{display: "none"}}>
 
