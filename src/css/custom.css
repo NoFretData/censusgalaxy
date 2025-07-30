@@ -164,9 +164,3 @@ summary {
   font-size: 1.25rem;
   /* ❌ DO NOT use display: flex — it breaks native arrow */
 }
-
-/* ✅ DO NOT override native markers or add custom ones */
-summary::marker,
-summary::-webkit-details-marker {
-  /* Leave these alone to preserve default arrow */
-}
