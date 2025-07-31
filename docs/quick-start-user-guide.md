@@ -33,9 +33,10 @@ Every row includes **GeoJSON fields** for polygons and centroids, usable with:
 - Each release is timestamped and versioned.
 
 ### Integrate into knowledge workflows
-Upload datasets into a **vector database** or GPT knowledge base for search, summarization, and Q&A.
+- Upload datasets into a **vector database** or GPT knowledge base for search, summarization, and Q&A.
 
-  
+<br />
+
   </div>
 </details>
 
@@ -69,9 +70,11 @@ Upload datasets into a **vector database** or GPT knowledge base for search, sum
 - Upload to **Pinecone**, **Weaviate**, or **Supabase pgvector**.
 - Enable GPT-powered Q&A, semantic search, and dashboards.
 
-  
+<br />
+
   </div>
 </details>
+
 
 
 
