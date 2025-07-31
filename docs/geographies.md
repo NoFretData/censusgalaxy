@@ -286,6 +286,8 @@ sidebar_label: Geographies
 hide_title: true
 ---
 
+import React from 'react';
+
 # Geographies Overview
 
 <span style={{display: "none"}}>
