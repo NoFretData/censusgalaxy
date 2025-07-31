@@ -1,0 +1,27 @@
+{
+  "id": "data/demographic-explanation",
+  "title": "Demographic Explanation",
+  "description": "",
+  "source": "@site/docs/data/demographic-explanation.md",
+  "sourceDirName": "data",
+  "slug": "/data/demographic-explanation",
+  "permalink": "/censusgalaxy/docs/data/demographic-explanation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/data/demographic-explanation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "demographic-explanation",
+    "title": "Demographic Explanation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Geographies",
+    "permalink": "/censusgalaxy/docs/geographies"
+  },
+  "next": {
+    "title": "Metrics",
+    "permalink": "/censusgalaxy/docs/data/metrics"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "data-geography-nuances",
+  "title": "Data geography nuances",
+  "description": "",
+  "source": "@site/docs/data-geography-nuances.md",
+  "sourceDirName": ".",
+  "slug": "/data-geography-nuances",
+  "permalink": "/censusgalaxy/docs/data-geography-nuances",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/data-geography-nuances.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "data-geography-nuances",
+    "title": "Data geography nuances"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Percentiles",
+    "permalink": "/censusgalaxy/docs/data/percentiles"
+  }
+}

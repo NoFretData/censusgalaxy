@@ -1,0 +1,20 @@
+{
+  "id": "datasets/index",
+  "title": "Datasets",
+  "description": "This is a placeholder for the Datasets category page.",
+  "source": "@site/docs/datasets/index.md",
+  "sourceDirName": "datasets",
+  "slug": "/datasets/",
+  "permalink": "/censusgalaxy/docs/datasets/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/datasets/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Quick Start Guide",
+    "permalink": "/censusgalaxy/docs/quick-start-guide"
+  }
+}

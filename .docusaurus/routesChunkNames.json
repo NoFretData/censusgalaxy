@@ -1,0 +1,57 @@
+{
+  "/censusgalaxy/markdown-page-cef": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/censusgalaxy/docs-21e": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/censusgalaxy/docs-5a1": {
+    "__comp": "a7bd4aaa",
+    "__props": "17b56a66"
+  },
+  "/censusgalaxy/docs-1cf": {
+    "__comp": "a94703ab"
+  },
+  "/censusgalaxy/docs/data-geography-nuances-d4f": {
+    "__comp": "17896441",
+    "content": "2fc8b2e5"
+  },
+  "/censusgalaxy/docs/data/demographic-explanation-72b": {
+    "__comp": "17896441",
+    "content": "3ab44b87"
+  },
+  "/censusgalaxy/docs/data/metrics-9d4": {
+    "__comp": "17896441",
+    "content": "b48b7bdf"
+  },
+  "/censusgalaxy/docs/data/percentages-c15": {
+    "__comp": "17896441",
+    "content": "4dc9ecd1"
+  },
+  "/censusgalaxy/docs/data/percentiles-03c": {
+    "__comp": "17896441",
+    "content": "af175014"
+  },
+  "/censusgalaxy/docs/geographies-052": {
+    "__comp": "17896441",
+    "content": "3c8d8520"
+  },
+  "/censusgalaxy/docs/quick-start-guide-bb0": {
+    "__comp": "17896441",
+    "content": "f8d26004"
+  },
+  "/censusgalaxy/-a2c": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "census-galaxy/data-sources",
+  "title": "data-sources",
+  "description": "",
+  "source": "@site/docs/census-galaxy/data-sources.md",
+  "sourceDirName": "census-galaxy",
+  "slug": "/census-galaxy/data-sources",
+  "permalink": "/censusgalaxy/docs/census-galaxy/data-sources",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/census-galaxy/data-sources.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "geographies",
+    "permalink": "/censusgalaxy/docs/census-galaxy/geographies"
+  },
+  "next": {
+    "title": "metrics",
+    "permalink": "/censusgalaxy/docs/census-galaxy/metrics"
+  }
+}

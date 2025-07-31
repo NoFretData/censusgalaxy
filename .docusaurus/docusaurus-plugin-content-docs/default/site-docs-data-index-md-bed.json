@@ -1,0 +1,15 @@
+{
+  "id": "data/index",
+  "title": "index",
+  "description": "",
+  "source": "@site/docs/data/index.md",
+  "sourceDirName": "data",
+  "slug": "/data/",
+  "permalink": "/censusgalaxy/docs/data/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/data/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

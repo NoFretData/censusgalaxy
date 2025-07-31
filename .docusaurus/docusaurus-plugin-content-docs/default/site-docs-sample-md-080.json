@@ -1,0 +1,24 @@
+{
+  "id": "sample",
+  "title": "Sample",
+  "description": "This is a placeholder for the Sample page.",
+  "source": "@site/docs/sample.md",
+  "sourceDirName": ".",
+  "slug": "/sample",
+  "permalink": "/censusgalaxy/docs/sample",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/sample.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Demo",
+    "permalink": "/censusgalaxy/docs/demo"
+  },
+  "next": {
+    "title": "Datasets",
+    "permalink": "/censusgalaxy/docs/datasets/"
+  }
+}

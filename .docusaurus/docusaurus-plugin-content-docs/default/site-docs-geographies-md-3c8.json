@@ -1,0 +1,28 @@
+{
+  "id": "geographies",
+  "title": "Geographies",
+  "description": "Block Groups",
+  "source": "@site/docs/geographies.md",
+  "sourceDirName": ".",
+  "slug": "/geographies",
+  "permalink": "/censusgalaxy/docs/geographies",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/geographies.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "geographies",
+    "title": "Geographies",
+    "sidebar_label": "Geographies"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick Start + User Guide",
+    "permalink": "/censusgalaxy/docs/quick-start-guide"
+  },
+  "next": {
+    "title": "Demographic Explanation",
+    "permalink": "/censusgalaxy/docs/data/demographic-explanation"
+  }
+}

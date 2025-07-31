@@ -1,0 +1,24 @@
+{
+  "id": "census-galaxy/geographies",
+  "title": "geographies",
+  "description": "",
+  "source": "@site/docs/census-galaxy/geographies.md",
+  "sourceDirName": "census-galaxy",
+  "slug": "/census-galaxy/geographies",
+  "permalink": "/censusgalaxy/docs/census-galaxy/geographies",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/census-galaxy/geographies.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/censusgalaxy/docs/census-galaxy/overview"
+  },
+  "next": {
+    "title": "data-sources",
+    "permalink": "/censusgalaxy/docs/census-galaxy/data-sources"
+  }
+}

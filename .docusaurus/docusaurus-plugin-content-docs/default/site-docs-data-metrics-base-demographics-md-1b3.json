@@ -1,0 +1,20 @@
+{
+  "id": "data/metrics/base-demographics",
+  "title": "base-demographics",
+  "description": "",
+  "source": "@site/docs/data/metrics/base-demographics.md",
+  "sourceDirName": "data/metrics",
+  "slug": "/data/metrics/base-demographics",
+  "permalink": "/censusgalaxy/docs/data/metrics/base-demographics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/data/metrics/base-demographics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "block-groups",
+    "permalink": "/censusgalaxy/docs/data/geographies/block-groups"
+  }
+}

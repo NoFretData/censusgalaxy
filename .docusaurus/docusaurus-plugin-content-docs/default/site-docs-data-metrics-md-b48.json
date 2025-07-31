@@ -1,0 +1,27 @@
+{
+  "id": "data/metrics",
+  "title": "Metrics",
+  "description": "Metrics Table",
+  "source": "@site/docs/data/metrics.md",
+  "sourceDirName": "data",
+  "slug": "/data/metrics",
+  "permalink": "/censusgalaxy/docs/data/metrics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/data/metrics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "metrics",
+    "title": "Metrics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Demographic Explanation",
+    "permalink": "/censusgalaxy/docs/data/demographic-explanation"
+  },
+  "next": {
+    "title": "Percentages",
+    "permalink": "/censusgalaxy/docs/data/percentages"
+  }
+}

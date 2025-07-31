@@ -1,0 +1,23 @@
+{
+  "id": "quick-start-guide",
+  "title": "Quick Start Guide",
+  "description": "Quick Start Guide",
+  "source": "@site/docs/quick-start-user-guide.md",
+  "sourceDirName": ".",
+  "slug": "/quick-start-guide",
+  "permalink": "/censusgalaxy/docs/quick-start-guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/quick-start-user-guide.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "quick-start-guide",
+    "title": "Quick Start Guide"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Geographies",
+    "permalink": "/censusgalaxy/docs/geographies"
+  }
+}

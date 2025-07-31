@@ -1,0 +1,27 @@
+{
+  "id": "quick-start/Quick Start Guide",
+  "title": "Quick Start Guide",
+  "description": "",
+  "source": "@site/docs/quick-start/quick-start-guide.md",
+  "sourceDirName": "quick-start",
+  "slug": "/quick-start/Quick Start Guide",
+  "permalink": "/censusgalaxy/docs/quick-start/Quick Start Guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/quick-start/quick-start-guide.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Quick Start Guide",
+    "title": "Quick Start Guide"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Datasets",
+    "permalink": "/censusgalaxy/docs/datasets/"
+  },
+  "next": {
+    "title": "user-guide",
+    "permalink": "/censusgalaxy/docs/user-guide/"
+  }
+}

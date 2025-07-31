@@ -1,0 +1,293 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "237": [
+      237
+    ],
+    "650": [
+      61,
+      401,
+      869,
+      650
+    ],
+    "17896441": [
+      650,
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "17b56a66": [
+      23
+    ],
+    "1f391b9e": [
+      650,
+      869,
+      61
+    ],
+    "2fc8b2e5": [
+      212
+    ],
+    "393be207": [
+      134
+    ],
+    "3ab44b87": [
+      364
+    ],
+    "3c8d8520": [
+      910
+    ],
+    "4dc9ecd1": [
+      170
+    ],
+    "5e95c892": [
+      647
+    ],
+    "a7456010": [
+      235
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "aba21aa0": [
+      742
+    ],
+    "af175014": [
+      546
+    ],
+    "b48b7bdf": [
+      922
+    ],
+    "c4f5d8e4": [
+      869,
+      634
+    ],
+    "f8d26004": [
+      333
+    ],
+    "styles": [
+      48,
+      61,
+      354,
+      401,
+      634,
+      650,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "23": {
+      "js": [
+        {
+          "file": "assets/js/17b56a66.0d895ec2.js",
+          "hash": "d0c9aeb46bb06a7f",
+          "publicPath": "/censusgalaxy/assets/js/17b56a66.0d895ec2.js"
+        }
+      ]
+    },
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.1f97a1e9.js",
+          "hash": "d271534416f29bc6",
+          "publicPath": "/censusgalaxy/assets/js/a94703ab.1f97a1e9.js"
+        }
+      ]
+    },
+    "61": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.6c5f622d.js",
+          "hash": "b2216fb17277160e",
+          "publicPath": "/censusgalaxy/assets/js/1f391b9e.6c5f622d.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.dd112092.js",
+          "hash": "86eba73a493946ad",
+          "publicPath": "/censusgalaxy/assets/js/a7bd4aaa.dd112092.js"
+        }
+      ]
+    },
+    "134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.de8fd9e5.js",
+          "hash": "4b877fd99d51e233",
+          "publicPath": "/censusgalaxy/assets/js/393be207.de8fd9e5.js"
+        }
+      ]
+    },
+    "170": {
+      "js": [
+        {
+          "file": "assets/js/4dc9ecd1.954dbd33.js",
+          "hash": "75b56a4ba0d4c3ee",
+          "publicPath": "/censusgalaxy/assets/js/4dc9ecd1.954dbd33.js"
+        }
+      ]
+    },
+    "212": {
+      "js": [
+        {
+          "file": "assets/js/2fc8b2e5.47854a62.js",
+          "hash": "51cea9e8ee0cb054",
+          "publicPath": "/censusgalaxy/assets/js/2fc8b2e5.47854a62.js"
+        }
+      ]
+    },
+    "235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.48302899.js",
+          "hash": "d12c869a31922a1b",
+          "publicPath": "/censusgalaxy/assets/js/a7456010.48302899.js"
+        }
+      ]
+    },
+    "237": {
+      "js": [
+        {
+          "file": "assets/js/237.e8f3108f.js",
+          "hash": "b553d4d34fff7740",
+          "publicPath": "/censusgalaxy/assets/js/237.e8f3108f.js"
+        }
+      ]
+    },
+    "333": {
+      "js": [
+        {
+          "file": "assets/js/f8d26004.d3a2c4d1.js",
+          "hash": "5e6bea43540dd31f",
+          "publicPath": "/censusgalaxy/assets/js/f8d26004.d3a2c4d1.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.cdff33e7.js",
+          "hash": "5f1199dcfe16b8b5",
+          "publicPath": "/censusgalaxy/assets/js/runtime~main.cdff33e7.js"
+        }
+      ]
+    },
+    "364": {
+      "js": [
+        {
+          "file": "assets/js/3ab44b87.53afa8fc.js",
+          "hash": "1c4661ab56e9024f",
+          "publicPath": "/censusgalaxy/assets/js/3ab44b87.53afa8fc.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.90b0c0c3.js",
+          "hash": "9099c369e67233ac",
+          "publicPath": "/censusgalaxy/assets/js/17896441.90b0c0c3.js"
+        }
+      ]
+    },
+    "546": {
+      "js": [
+        {
+          "file": "assets/js/af175014.52fbd382.js",
+          "hash": "0d68f67bb8a053f7",
+          "publicPath": "/censusgalaxy/assets/js/af175014.52fbd382.js"
+        }
+      ]
+    },
+    "634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.c8b8dae3.js",
+          "hash": "e26b635134094c2b",
+          "publicPath": "/censusgalaxy/assets/js/c4f5d8e4.c8b8dae3.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.db2e72fa.js",
+          "hash": "a5882f6e0e9c4ad9",
+          "publicPath": "/censusgalaxy/assets/js/5e95c892.db2e72fa.js"
+        }
+      ]
+    },
+    "650": {
+      "js": [
+        {
+          "file": "assets/js/650.f31aff9f.js",
+          "hash": "4c4178bcfb748077",
+          "publicPath": "/censusgalaxy/assets/js/650.f31aff9f.js"
+        }
+      ]
+    },
+    "742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.291314e8.js",
+          "hash": "5d74e0613772e027",
+          "publicPath": "/censusgalaxy/assets/js/aba21aa0.291314e8.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.babd18d7.js",
+          "hash": "937838027d5eb1d4",
+          "publicPath": "/censusgalaxy/assets/js/main.babd18d7.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.b18bf9dd.css",
+          "hash": "ab28253e97bc5ebc",
+          "publicPath": "/censusgalaxy/assets/css/styles.b18bf9dd.css"
+        }
+      ]
+    },
+    "910": {
+      "js": [
+        {
+          "file": "assets/js/3c8d8520.3f805585.js",
+          "hash": "d58b3507d7849f08",
+          "publicPath": "/censusgalaxy/assets/js/3c8d8520.3f805585.js"
+        }
+      ]
+    },
+    "922": {
+      "js": [
+        {
+          "file": "assets/js/b48b7bdf.39edfccd.js",
+          "hash": "eb6aaf98353ab51e",
+          "publicPath": "/censusgalaxy/assets/js/b48b7bdf.39edfccd.js"
+        }
+      ]
+    }
+  }
+}

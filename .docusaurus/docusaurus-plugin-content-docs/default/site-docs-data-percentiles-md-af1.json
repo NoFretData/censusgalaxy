@@ -1,0 +1,27 @@
+{
+  "id": "data/percentiles",
+  "title": "Percentiles",
+  "description": "Percentiles",
+  "source": "@site/docs/data/percentiles.md",
+  "sourceDirName": "data",
+  "slug": "/data/percentiles",
+  "permalink": "/censusgalaxy/docs/data/percentiles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ArbazAnalytics/censusgalaxy/docs/data/percentiles.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "percentiles",
+    "title": "Percentiles"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Percentages",
+    "permalink": "/censusgalaxy/docs/data/percentages"
+  },
+  "next": {
+    "title": "Data & Geography Nuances",
+    "permalink": "/censusgalaxy/docs/data-geography-nuances"
+  }
+}

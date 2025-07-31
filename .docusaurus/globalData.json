@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/censusgalaxy/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/censusgalaxy/docs",
+          "mainDocId": "quick-start-guide",
+          "docs": [
+            {
+              "id": "data-geography-nuances",
+              "path": "/censusgalaxy/docs/data-geography-nuances",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data/demographic-explanation",
+              "path": "/censusgalaxy/docs/data/demographic-explanation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data/metrics",
+              "path": "/censusgalaxy/docs/data/metrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data/percentages",
+              "path": "/censusgalaxy/docs/data/percentages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data/percentiles",
+              "path": "/censusgalaxy/docs/data/percentiles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "geographies",
+              "path": "/censusgalaxy/docs/geographies",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "quick-start-guide",
+              "path": "/censusgalaxy/docs/quick-start-guide",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/censusgalaxy/docs/quick-start-guide",
+                "label": "Quick Start + User Guide"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
