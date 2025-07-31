@@ -42,7 +42,7 @@ Every row includes **GeoJSON fields** for polygons and centroids, usable with:
 
 ---
 
-<details>
+<details open>
   <summary><strong>User Guide</strong></summary>
 
   <div>
