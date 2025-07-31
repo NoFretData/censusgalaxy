@@ -168,7 +168,7 @@ summary {
 summary::marker,
 summary::-webkit-details-marker {
   color: var(--ifm-color-primary);  /* Optional: matches Hasura teal */
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 /* Optional spacing fix — can be removed if not needed */
