@@ -7,6 +7,12 @@ hide_title: true
 
 # Quick Start + User Guide
 
+<span style={{display: "none"}}>
+
+## Quick Start Guide
+
+</span>
+
 <details open>
   <summary><strong>Quick Start Guide</strong></summary>
 
@@ -41,6 +47,12 @@ Every row includes **GeoJSON fields** for polygons and centroids, usable with:
 </details>
 
 ---
+
+<span style={{display: "none"}}>
+
+## User Guide
+
+</span>
 
 <details open>
   <summary><strong>User Guide</strong></summary>
