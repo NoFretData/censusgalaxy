@@ -163,7 +163,7 @@ summary::marker {
 /* Custom arrow */
 details > summary::before {
   content: '▸';                     /* Arrow icon */
-  font-size: 1.6rem;                 /* Bigger size */
+  font-size: 1.0rem;                 /* Bigger size */
   position: absolute;
   left: 0;
   top: 0.4rem;
@@ -181,7 +181,7 @@ summary {
   font-weight: 600;
   font-size: 1.4rem;   /* Increased from 1.25rem */
   cursor: pointer;
-  padding-left: 2rem;  /* Add space for bigger arrow */
+  padding-left: 1.5rem;  /* Add space for bigger arrow */
   position: relative;
   color: var(--ifm-heading-color, inherit);
 }
