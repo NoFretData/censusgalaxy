@@ -142,7 +142,7 @@ code {
 }
 
 /* ----------------------------- */
-/*       COLLAPSIBLE STYLES     */
+/*       COLLAPSIBLE STYLES       */
 /* ----------------------------- */
 
 /* details container - clean */
@@ -153,28 +153,43 @@ details {
   margin-bottom: 1rem;
 }
 
-/* summary - clean look, no bullet */
+/* Hide default arrow */
+summary::-webkit-details-marker,
+summary::marker {
+  display: none;
+  content: '';
+}
+
+/* Custom arrow */
+details > summary::before {
+  content: '▸';                     /* Arrow icon */
+  font-size: 1.6rem;                 /* Bigger size */
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  color: var(--ifm-color-primary);   /* Matches theme */
+  transition: transform 0.2s ease;   /* Smooth rotate */
+}
+
+/* Rotate when open */
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* Increase heading text size */
 summary {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.4rem;   /* Increased from 1.25rem */
   cursor: pointer;
-  list-style: none;          /* ❌ removes bullet */
-  padding-left: 1.4rem;      /* ✅ creates spacing from arrow */
+  padding-left: 2rem;  /* Add space for bigger arrow */
   position: relative;
   color: var(--ifm-heading-color, inherit);
 }
 
-/* Native arrow — allow it to display, styled */
-summary::marker,
-summary::-webkit-details-marker {
-  color: var(--ifm-color-primary);  /* Optional: matches Hasura teal */
-  font-size: 1.6rem;
+/* Optional hover effect for arrow and text */
+summary:hover::before {
+  color: var(--ifm-color-primary-light);
 }
-
-/* Optional spacing fix — can be removed if not needed */
-details > summary::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
+summary:hover {
+  color: var(--ifm-color-primary-dark);
 }
