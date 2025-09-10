@@ -1,55 +1,55 @@
-// src/components/SmartTable.tsx
-import * as React from 'react';
+// // src/components/SmartTable.tsx
+// import * as React from 'react';
 
-type Row = Record<string, unknown>;
+// type Row = Record<string, unknown>;
 
-export default function SmartTable({
-  rows,
-  pageSizeDefault = 10,
-}: {
-  rows: Row[];
-  pageSizeDefault?: number;
-}) {
-  // ✅ DO NOT reference any `percentages` variable here.
-  // Use only the `rows` prop passed in by MDX.
-  const [page, setPage] = React.useState(1);
-  const pageSize = pageSizeDefault;
+// export default function SmartTable({
+//   rows,
+//   pageSizeDefault = 10,
+// }: {
+//   rows: Row[];
+//   pageSizeDefault?: number;
+// }) {
+//   // ✅ DO NOT reference any `percentages` variable here.
+//   // Use only the `rows` prop passed in by MDX.
+//   const [page, setPage] = React.useState(1);
+//   const pageSize = pageSizeDefault;
 
-  const total = rows?.length ?? 0;
-  const start = (page - 1) * pageSize;
-  const pageRows = rows?.slice(start, start + pageSize) ?? [];
+//   const total = rows?.length ?? 0;
+//   const start = (page - 1) * pageSize;
+//   const pageRows = rows?.slice(start, start + pageSize) ?? [];
 
-  if (!rows || rows.length === 0) return <div>No data</div>;
+//   if (!rows || rows.length === 0) return <div>No data</div>;
 
-  const columns = Object.keys(pageRows[0] ?? {});
-  return (
-    <div>
-      <table>
-        <thead>
-          <tr>{columns.map((c) => <th key={c}>{c}</th>)}</tr>
-        </thead>
-        <tbody>
-          {pageRows.map((r, i) => (
-            <tr key={i}>
-              {columns.map((c) => <td key={c}>{String(r[c] ?? '')}</td>)}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+//   const columns = Object.keys(pageRows[0] ?? {});
+//   return (
+//     <div>
+//       <table>
+//         <thead>
+//           <tr>{columns.map((c) => <th key={c}>{c}</th>)}</tr>
+//         </thead>
+//         <tbody>
+//           {pageRows.map((r, i) => (
+//             <tr key={i}>
+//               {columns.map((c) => <td key={c}>{String(r[c] ?? '')}</td>)}
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
 
-      {/* super-light pager */}
-      <div style={{marginTop: 12}}>
-        <button onClick={() => setPage((p) => Math.max(1, p - 1))}>Prev</button>
-        <span style={{margin: '0 8px'}}>
-          Page {page} of {Math.ceil(total / pageSize)}
-        </span>
-        <button onClick={() => setPage((p) => (start + pageSize < total ? p + 1 : p))}>
-          Next
-        </button>
-      </div>
-    </div>
-  );
-}
+//       {/* super-light pager */}
+//       <div style={{marginTop: 12}}>
+//         <button onClick={() => setPage((p) => Math.max(1, p - 1))}>Prev</button>
+//         <span style={{margin: '0 8px'}}>
+//           Page {page} of {Math.ceil(total / pageSize)}
+//         </span>
+//         <button onClick={() => setPage((p) => (start + pageSize < total ? p + 1 : p))}>
+//           Next
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 
@@ -183,3 +183,150 @@ export default function SmartTable({
 //   );
 // }
 
+/* 10-20 and all */
+
+// src/components/SmartTable.tsx
+import * as React from 'react';
+
+type Row = Record<string, unknown>;
+
+export default function SmartTable({
+  rows,
+  pageSizeDefault = 10,
+}: {
+  rows: Row[];
+  pageSizeDefault?: number;
+}) {
+  const [page, setPage] = React.useState(1);
+  const [showAll, setShowAll] = React.useState(false);
+  const [sortKey, setSortKey] = React.useState<string | null>(null);
+  const [sortAsc, setSortAsc] = React.useState(true);
+
+  if (!rows || rows.length === 0) return <div>No data</div>;
+
+  const total = rows.length;
+  const columns = React.useMemo(() => Object.keys(rows[0] ?? {}), [rows]);
+
+  // sort
+  const sorted = React.useMemo(() => {
+    if (!sortKey) return rows;
+    const copy = [...rows];
+    copy.sort((a, b) => {
+      const va = a[sortKey];
+      const vb = b[sortKey];
+      if (va === vb) return 0;
+      if (va == null) return sortAsc ? -1 : 1;
+      if (vb == null) return sortAsc ? 1 : -1;
+
+      // numeric-aware compare if both look like numbers
+      const na = Number(va);
+      const nb = Number(vb);
+      const bothNumeric = !Number.isNaN(na) && !Number.isNaN(nb);
+      if (bothNumeric) return sortAsc ? na - nb : nb - na;
+
+      return sortAsc
+        ? String(va).localeCompare(String(vb))
+        : String(vb).localeCompare(String(va));
+    });
+    return copy;
+  }, [rows, sortKey, sortAsc]);
+
+  // paging (disabled when showAll)
+  const pageSize = showAll ? total : pageSizeDefault;
+  const lastPage = Math.max(1, Math.ceil(total / pageSize));
+  const safePage = Math.min(page, lastPage);
+  const start = (safePage - 1) * pageSize;
+  const pageRows = showAll ? sorted : sorted.slice(start, start + pageSize);
+
+  const handleSort = (col: string) => {
+    setPage(1);
+    if (sortKey === col) {
+      setSortAsc((s) => !s);
+    } else {
+      setSortKey(col);
+      setSortAsc(true);
+    }
+  };
+
+  const toggleShowAll = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setShowAll(e.target.checked);
+    setPage(1);
+  };
+
+  return (
+    <div>
+      {/* Controls */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+        <label style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+          <input type="checkbox" checked={showAll} onChange={toggleShowAll} />
+          Show all
+        </label>
+        {!showAll && (
+          <span style={{ opacity: 0.8 }}>
+            Showing {pageRows.length} of {total}
+          </span>
+        )}
+      </div>
+
+      {/* Table */}
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ fontSize: '0.9rem', width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr>
+              {columns.map((c) => (
+                <th
+                  key={c}
+                  onClick={() => handleSort(c)}
+                  style={{
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                    textAlign: 'left',
+                    padding: '6px 8px',
+                    borderBottom: '1px solid #ddd',
+                    whiteSpace: 'nowrap',
+                  }}
+                  title="Click to sort"
+                >
+                  {c}
+                  {sortKey === c ? (sortAsc ? ' ▲' : ' ▼') : ''}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {pageRows.map((r, i) => (
+              <tr key={i}>
+                {columns.map((c) => (
+                  <td
+                    key={c}
+                    style={{ padding: '6px 8px', borderBottom: '1px solid #eee' }}
+                  >
+                    {String(r[c] ?? '')}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Pager */}
+      {!showAll && lastPage > 1 && (
+        <div style={{ marginTop: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={safePage === 1}>
+            Prev
+          </button>
+          <span>
+            Page {safePage} of {lastPage}
+          </span>
+          <button
+            onClick={() => setPage((p) => Math.min(lastPage, p + 1))}
+            disabled={safePage === lastPage}
+          >
+            Next
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
