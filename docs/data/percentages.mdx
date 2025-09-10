@@ -1,0 +1,55 @@
+<!-- ---
+id: percentages
+title: Percentages
+---
+
+
+## Percentiles
+
+The **Percentiles** table ranks each geography relative to all geographies in the nation — not just within its state.  
+A percentile of `0.92` means that the area scores higher than 92% of all U.S. geographies for that metric.
+
+> 🟡 **Note**: Percentiles are always calculated against **national distributions**  
+> (e.g., all block groups in the U.S.), not within a specific state or county.
+
+---
+
+### Use when:
+- You want to highlight top/bottom performers (e.g., bottom 10% of income).
+- You’re building equity dashboards or identifying priority zones.
+- You need filters for visualizations (e.g., show only tracts below the 25th percentile).
+- You’re creating models or indexes that require standardized, relative values. -->
+
+
+
+---
+id: percentages
+title: Percentages
+---
+
+## Percentages
+
+The Percentages table shows what portion of a population in a given area has a specific characteristic. A value of 0.41 for degree holders means that 41% of adults aged 25+ in that geography have a college degree.
+
+> 🟡 **Note**: Percentages are calculated using a relevant denominator — like Total Population, Households, or Adults 25+ — as shown in the data dictionary table.
+
+### Use when:
+- You want to describe the makeup of a population (e.g., % female, % foreign born).
+- You’re filtering based on specific thresholds (e.g., ZIPs where over 60% have internet access).
+- You’re building charts or dashboards that show absolute values.
+- You’re analyzing traits within a geography, not comparing it to others.
+
+---
+
+### Field Summary
+
+
+import SmartTable from '@site/src/components/SmartTable';
+import data from '@site/src/data/percentages.json';
+
+<details open>
+  <summary><strong>Browse percentage fields</strong></summary>
+
+<SmartTable rows={data} pageSizeDefault={10} />
+
+</details>
