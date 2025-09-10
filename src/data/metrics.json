@@ -1,0 +1,458 @@
+[
+  {
+    "Column Name": "TOTAL_POPULATION",
+    "Data Type": "FLOAT",
+    "Example": "1993",
+    "Description": "Total number of people in the geography."
+  },
+  {
+    "Column Name": "TOTAL_HOUSEHOLDS",
+    "Data Type": "FLOAT",
+    "Example": "681",
+    "Description": "Total number of households."
+  },
+  {
+    "Column Name": "MEDIAN_AGE",
+    "Data Type": "FLOAT",
+    "Example": "43.4",
+    "Description": "Median age of all residents."
+  },
+  {
+    "Column Name": "FEMALE_POPULATION",
+    "Data Type": "FLOAT",
+    "Example": "967",
+    "Description": "Total female population."
+  },
+  {
+    "Column Name": "MALE_POPULATION",
+    "Data Type": "FLOAT",
+    "Example": "1026",
+    "Description": "Total male population."
+  },
+  {
+    "Column Name": "POPULATION_DENSITY",
+    "Data Type": "FIXED DECIMAL",
+    "Example": "2720.08",
+    "Description": "Population per square mile."
+  },
+  {
+    "Column Name": "MEDIAN_HOUSEHOLD_INCOME",
+    "Data Type": "FLOAT",
+    "Example": "194850",
+    "Description": "Median income of all households."
+  },
+  {
+    "Column Name": "TOTAL_INCOME",
+    "Data Type": "FLOAT",
+    "Example": "142189400",
+    "Description": "Aggregate total income of the area."
+  },
+  {
+    "Column Name": "GINI_INDEX",
+    "Data Type": "FLOAT",
+    "Example": "0.282757",
+    "Description": "Measure of income inequality (0 = perfect equality, 1 = perfect inequality)."
+  },
+  {
+    "Column Name": "POP_ABOVE_POVERTY_LEVEL",
+    "Data Type": "FLOAT",
+    "Example": "1961",
+    "Description": "Population above the poverty threshold."
+  },
+  {
+    "Column Name": "POP_BELOW_POVERTY_LEVEL",
+    "Data Type": "FLOAT",
+    "Example": "18",
+    "Description": "Population below the poverty threshold."
+  },
+  {
+    "Column Name": "HOUSEHOLD_INCOME_LESS_THAN_30K",
+    "Data Type": "FLOAT",
+    "Example": "14",
+    "Description": "Households earning under $30,000."
+  },
+  {
+    "Column Name": "HOUSEHOLD_INCOME_30K_TO_59K",
+    "Data Type": "FLOAT",
+    "Example": "33",
+    "Description": "Households earning between $30,000–$59,999."
+  },
+  {
+    "Column Name": "HOUSEHOLD_INCOME_60K_TO_99K",
+    "Data Type": "FLOAT",
+    "Example": "58",
+    "Description": "Households earning between $60,000–$99,999."
+  },
+  {
+    "Column Name": "HOUSEHOLD_INCOME_100K_TO_149K",
+    "Data Type": "FLOAT",
+    "Example": "125",
+    "Description": "Households earning between $100,000–$149,999."
+  },
+  {
+    "Column Name": "HOUSEHOLD_INCOME_150K_AND_ABOVE",
+    "Data Type": "FLOAT",
+    "Example": "451",
+    "Description": "Households earning $150,000 and above."
+  },
+  {
+    "Column Name": "HISPANIC_LATINO",
+    "Data Type": "FLOAT",
+    "Example": "67",
+    "Description": "People of Hispanic or Latino origin."
+  },
+  {
+    "Column Name": "AMERICAN_INDIAN_ALASKA_NATIVE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "American Indian or Alaska Native population."
+  },
+  {
+    "Column Name": "ASIAN",
+    "Data Type": "FLOAT",
+    "Example": "124",
+    "Description": "Asian alone population."
+  },
+  {
+    "Column Name": "BLACK_AFRICAN_AMERICAN",
+    "Data Type": "FLOAT",
+    "Example": "298",
+    "Description": "Black or African American alone population."
+  },
+  {
+    "Column Name": "WHITE",
+    "Data Type": "FLOAT",
+    "Example": "1527",
+    "Description": "White alone population."
+  },
+  {
+    "Column Name": "PACIFIC_ISLANDER",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Native Hawaiian or other Pacific Islander."
+  },
+  {
+    "Column Name": "OTHER_RACE_ALONE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Other race alone population."
+  },
+  {
+    "Column Name": "TWO_MORE_RACES",
+    "Data Type": "FLOAT",
+    "Example": "44",
+    "Description": "People identifying as two or more races."
+  },
+  {
+    "Column Name": "TWO_MORE_RACES_EXCL_SOME_OTHER_AND_THREE_RACE",
+    "Data Type": "FLOAT",
+    "Example": "44",
+    "Description": "Two or more races excluding 'some other' and three-race combos."
+  },
+  {
+    "Column Name": "TWO_MORE_RACES_EXCL_SOME_OTHER_RACE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Two or more races excluding 'some other' race."
+  },
+  {
+    "Column Name": "BORN_IN_OTHER_STATE",
+    "Data Type": "FLOAT",
+    "Example": "557",
+    "Description": "Population born in a different state."
+  },
+  {
+    "Column Name": "BORN_IN_STATE_OF_RESIDENCE",
+    "Data Type": "FLOAT",
+    "Example": "967",
+    "Description": "Population born in the current state."
+  },
+  {
+    "Column Name": "FOREIGN_BORN",
+    "Data Type": "FLOAT",
+    "Example": "415",
+    "Description": "Foreign-born population."
+  },
+  {
+    "Column Name": "NATIVE_BORN_OUTSIDE_US",
+    "Data Type": "FLOAT",
+    "Example": "53",
+    "Description": "Native-born population outside the U.S."
+  },
+  {
+    "Column Name": "MOVED_FROM_ABROAD",
+    "Data Type": "FLOAT",
+    "Example": "7",
+    "Description": "Population that moved from abroad."
+  },
+  {
+    "Column Name": "MOVED_FROM_DIFFERENT_STATE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Population that moved from a different U.S. state."
+  },
+  {
+    "Column Name": "DEGREE_HOLDERS",
+    "Data Type": "FLOAT",
+    "Example": "1255",
+    "Description": "People with a bachelor’s degree or higher."
+  },
+  {
+    "Column Name": "STUDENTS_GRADE_K_TO_ 8_PUBLIC",
+    "Data Type": "FLOAT",
+    "Example": "242",
+    "Description": "K–8 students in public school."
+  },
+  {
+    "Column Name": "STUDENTS_GRADE_K_TO_ 8_PRIVATE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "K–8 students in private school."
+  },
+  {
+    "Column Name": "STUDENTS_HIGH_SCHOOL_PUBLIC",
+    "Data Type": "FLOAT",
+    "Example": "138",
+    "Description": "High school students in public school."
+  },
+  {
+    "Column Name": "STUDENTS_HIGH_SCHOOL_PRIVATE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "High school students in private school."
+  },
+  {
+    "Column Name": "STUDENTS_UNDERGRAD_PUBLIC",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Undergraduate students in public college."
+  },
+  {
+    "Column Name": "STUDENTS_UNDERGRAD_PRIVATE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Undergraduate students in private college."
+  },
+  {
+    "Column Name": "CHILDREN",
+    "Data Type": "FLOAT",
+    "Example": "555",
+    "Description": "Total children under age 18."
+  },
+  {
+    "Column Name": "CHILDREN_PER_HOUSEHOLD",
+    "Data Type": "FIXED DECIMAL",
+    "Example": "0.8",
+    "Description": "Average children per household."
+  },
+  {
+    "Column Name": "TOTAL_HOUSING_UNITS",
+    "Data Type": "FLOAT",
+    "Example": "681",
+    "Description": "Total housing units."
+  },
+  {
+    "Column Name": "MEDIAN_GROSS_RENT",
+    "Data Type": "FLOAT",
+    "Example": "",
+    "Description": "Median gross monthly rent."
+  },
+  {
+    "Column Name": "MEDIAN_PROPERTY_VALUE",
+    "Data Type": "FLOAT",
+    "Example": "393400",
+    "Description": "Median property value in the area."
+  },
+  {
+    "Column Name": "COMMUTE_BICYCLE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Number of commuters who bike to work."
+  },
+  {
+    "Column Name": "COMMUTE_CAR_TRUCK_VAN",
+    "Data Type": "FLOAT",
+    "Example": "957",
+    "Description": "Number of commuters using car, truck, or van."
+  },
+  {
+    "Column Name": "COMMUTE_MOTORCYCLE",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Number of commuters using a motorcycle."
+  },
+  {
+    "Column Name": "COMMUTE_PUBLIC_TRANSPORTATION",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Number of commuters using public transportation."
+  },
+  {
+    "Column Name": "COMMUTE_TAXI",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Number of commuters using taxi or ride-share."
+  },
+  {
+    "Column Name": "COMMUTE_WALK",
+    "Data Type": "FLOAT",
+    "Example": "23",
+    "Description": "Number of commuters who walk to work."
+  },
+  {
+    "Column Name": "COMMUTE_WORK_FROM_HOME",
+    "Data Type": "FLOAT",
+    "Example": "187",
+    "Description": "Number of individuals who work from home."
+  },
+  {
+    "Column Name": "DEPART_FOR_WORK_EARLY_MORNING",
+    "Data Type": "FLOAT",
+    "Example": "666",
+    "Description": "Workers who leave for work before 6:30 AM."
+  },
+  {
+    "Column Name": "DEPART_FOR_WORK_MORNING_PEAK",
+    "Data Type": "FLOAT",
+    "Example": "256",
+    "Description": "Workers who leave for work between 6:30–9:30 AM."
+  },
+  {
+    "Column Name": "DEPART_FOR_WORK_MIDDAY",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Workers who leave for work between 9:30 AM–1:00 PM."
+  },
+  {
+    "Column Name": "DEPART_FOR_WORK_AFTERNOON_NIGHT",
+    "Data Type": "FLOAT",
+    "Example": "58",
+    "Description": "Workers who leave for work after 1:00 PM."
+  },
+  {
+    "Column Name": "TRAVEL_TIME_TO_WORK_UNDER_5_MINS",
+    "Data Type": "FLOAT",
+    "Example": "45",
+    "Description": "Commuters whose travel time is under 5 minutes."
+  },
+  {
+    "Column Name": "TRAVEL_TIME_TO_WORK_5_TO_19_MINS",
+    "Data Type": "FLOAT",
+    "Example": "549",
+    "Description": "Commuters with travel time between 5–19 minutes."
+  },
+  {
+    "Column Name": "TRAVEL_TIME_TO_WORK_20_TO_40_MINS",
+    "Data Type": "FLOAT",
+    "Example": "166",
+    "Description": "Commuters with travel time between 20–40 minutes."
+  },
+  {
+    "Column Name": "TRAVEL_TIME_TO_WORK_GREATER_THAN_40_MINS",
+    "Data Type": "FLOAT",
+    "Example": "220",
+    "Description": "Commuters whose travel time is more than 40 minutes."
+  },
+  {
+    "Column Name": "VETERANS",
+    "Data Type": "FLOAT",
+    "Example": "14",
+    "Description": "Number of military veterans."
+  },
+  {
+    "Column Name": "NON_VETERANS",
+    "Data Type": "FLOAT",
+    "Example": "1424",
+    "Description": "Number of non-veterans."
+  },
+  {
+    "Column Name": "CIVILIAN_EMPLOYED",
+    "Data Type": "FLOAT",
+    "Example": "1167",
+    "Description": "Civilian employed population."
+  },
+  {
+    "Column Name": "CIVILIAN_UNEMPLOYED",
+    "Data Type": "FLOAT",
+    "Example": "31",
+    "Description": "Civilian unemployed population."
+  },
+  {
+    "Column Name": "NOT_IN_LABOR_FORCE",
+    "Data Type": "FLOAT",
+    "Example": "350",
+    "Description": "Population not in the labor force."
+  },
+  {
+    "Column Name": "WITH_HEALTH_INSURANCE",
+    "Data Type": "FLOAT",
+    "Example": "1940",
+    "Description": "People covered by any type of health insurance."
+  },
+  {
+    "Column Name": "WITHOUT_HEALTH_INSURANCE",
+    "Data Type": "FLOAT",
+    "Example": "36",
+    "Description": "People not covered by any health insurance."
+  },
+  {
+    "Column Name": "HEALTH_INSURANCE_DIRECT_PURCHASE",
+    "Data Type": "FLOAT",
+    "Example": "286",
+    "Description": "People who directly purchased their insurance."
+  },
+  {
+    "Column Name": "HEALTH_INSURANCE_EMPLOYER",
+    "Data Type": "FLOAT",
+    "Example": "1399",
+    "Description": "People covered through an employer's insurance."
+  },
+  {
+    "Column Name": "HEALTH_INSURANCE_MEDICAID",
+    "Data Type": "FLOAT",
+    "Example": "134",
+    "Description": "People covered by Medicaid."
+  },
+  {
+    "Column Name": "HEALTH_INSURANCE_MEDICARE",
+    "Data Type": "FLOAT",
+    "Example": "29",
+    "Description": "People covered by Medicare."
+  },
+  {
+    "Column Name": "HEALTH_INSURANCE_TRICARE_MILITARY_VA_HEALTH",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "People covered by military, VA, or TRICARE."
+  },
+  {
+    "Column Name": "POPULATION_WITH_INTERNET_ACCESS",
+    "Data Type": "FLOAT",
+    "Example": "681",
+    "Description": "Households with any type of internet access."
+  },
+  {
+    "Column Name": "NO_INTERNET_ACCESS",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Households without any internet access."
+  },
+  {
+    "Column Name": "INTERNET_NO_SUBSCRIPTION",
+    "Data Type": "FLOAT",
+    "Example": "0",
+    "Description": "Households with internet but no paid subscription."
+  },
+  {
+    "Column Name": "INTERNET_VIA_CELL_DATA_PLAN",
+    "Data Type": "FLOAT",
+    "Example": "645",
+    "Description": "Households using a cellular data plan for internet."
+  },
+  {
+    "Column Name": "CITIZENS_VOTING_AGE",
+    "Data Type": "FLOAT",
+    "Example": "1416",
+    "Description": "Citizens of voting age (18+)."
+  }
+]

@@ -16,3 +16,19 @@ A percentile of `0.92` means that area scores higher than 92% of all U.S. geogra
 - You’re building equity dashboards or identifying priority zones.
 - You need filters for visualizations (e.g., show only tracts below the 25th percentile).
 - You’re creating models or indexes that require standardized, relative values.
+
+
+
+### Field Summary
+
+
+
+import SmartTable from '@site/src/components/SmartTable';
+import data from '@site/src/data/percentiles.json';
+
+<details open>
+  <summary><strong>Browse percentage fields</strong></summary>
+
+<SmartTable rows={data} pageSizeDefault={10} />
+
+</details>

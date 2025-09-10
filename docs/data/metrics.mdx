@@ -35,7 +35,19 @@ This makes it easy to pull in raw values, normalized percentages, and national p
 
 ### Field Summary
 
-<table style={{ fontFamily: 'Satoshi, sans-serif', width: '100%', borderCollapse: 'collapse' }}>
+
+
+import SmartTable from '@site/src/components/SmartTable';
+import data from '@site/src/data/metrics.json';
+
+<details open>
+  <summary><strong>Browse percentage fields</strong></summary>
+
+<SmartTable rows={data} pageSizeDefault={10} />
+
+</details>
+
+<!-- <table style={{ fontFamily: 'Satoshi, sans-serif', width: '100%', borderCollapse: 'collapse' }}>
   <thead style={{ background: '#f6f8fa' }}>
     <tr>
       <th><strong>Field</strong></th>
@@ -74,4 +86,4 @@ This makes it easy to pull in raw values, normalized percentages, and national p
     <tr><td><strong>INTERNET_VIA_CELL_DATA_PLAN</strong></td><td>FLOAT</td><td>645</td><td>Households using a cellular data plan for internet.</td></tr>
     <tr><td><strong>CITIZENS_VOTING_AGE</strong></td><td>FLOAT</td><td>1416</td><td>Citizens of voting age (18+).</td></tr>
   </tbody>
-</table>
+</table> -->
