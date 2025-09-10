@@ -25,7 +25,7 @@ Not all percentages share the same denominator:
   </div>
 </details>
 
-<details>
+<details open>
   <summary><strong>Are Percentiles “Good” or “Bad”?</strong></summary>
   <div>
 
