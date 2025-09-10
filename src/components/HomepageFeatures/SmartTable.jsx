@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import percentages from '../data/percentages.json'; // <-- load JSON
+// SmartTable.jsx (lives in src/components/HomepageFeatures)
+import data from '../../data/percentages.json'; // <- up 2 levels to src/data
 import styles from './SmartTable.module.css';
 
 export default function SmartTable() {
