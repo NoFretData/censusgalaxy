@@ -53,127 +53,64 @@
 
 
 
-// import * as React from 'react';
-
-// type Row = Record<string, unknown>;
-
-// export default function SmartTable({ rows }: { rows: Row[] }) {
-//   const [sortKey, setSortKey] = React.useState<string | null>(null);
-//   const [sortAsc, setSortAsc] = React.useState(true);
-
-//   if (!rows || rows.length === 0) return <div>No data</div>;
-
-//   const columns = Object.keys(rows[0]);
-
-//   // sort rows
-//   let sorted = [...rows];
-//   if (sortKey) {
-//     sorted.sort((a, b) => {
-//       const valA = a[sortKey];
-//       const valB = b[sortKey];
-//       if (valA === valB) return 0;
-//       if (valA == null) return sortAsc ? -1 : 1;
-//       if (valB == null) return sortAsc ? 1 : -1;
-//       return sortAsc
-//         ? String(valA).localeCompare(String(valB))
-//         : String(valB).localeCompare(String(valA));
-//     });
-//   }
-
-//   const handleSort = (col: string) => {
-//     if (sortKey === col) {
-//       setSortAsc(!sortAsc);
-//     } else {
-//       setSortKey(col);
-//       setSortAsc(true);
-//     }
-//   };
-
-//   return (
-//     <div style={{ maxHeight: 400, overflowY: "auto" }}>
-//       <table>
-//         <thead>
-//           <tr>
-//             {columns.map((c) => (
-//               <th
-//                 key={c}
-//                 onClick={() => handleSort(c)}
-//                 style={{ cursor: "pointer" }}
-//               >
-//                 {c}
-//                 {sortKey === c ? (sortAsc ? " ▲" : " ▼") : ""}
-//               </th>
-//             ))}
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {sorted.map((r, i) => (
-//             <tr key={i}>
-//               {columns.map((c) => (
-//                 <td key={c}>{String(r[c] ?? "")}</td>
-//               ))}
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// }
-
-
-/* Better Scrolling option */
-
 import * as React from 'react';
-import { useReactTable, getCoreRowModel, getSortedRowModel, flexRender } from '@tanstack/react-table';
 
-export default function SmartTable({ rows }: { rows: any[] }) {
-  const columns = React.useMemo(
-    () =>
-      Object.keys(rows[0] ?? {}).map((k) => ({
-        accessorKey: k,
-        header: k,
-      })),
-    [rows]
-  );
+type Row = Record<string, unknown>;
 
-  const [sorting, setSorting] = React.useState([]);
+export default function SmartTable({ rows }: { rows: Row[] }) {
+  const [sortKey, setSortKey] = React.useState<string | null>(null);
+  const [sortAsc, setSortAsc] = React.useState(true);
 
-  const table = useReactTable({
-    data: rows,
-    columns,
-    state: { sorting },
-    onSortingChange: setSorting,
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-  });
+  if (!rows || rows.length === 0) return <div>No data</div>;
+
+  const columns = Object.keys(rows[0]);
+
+  // sort rows
+  let sorted = [...rows];
+  if (sortKey) {
+    sorted.sort((a, b) => {
+      const valA = a[sortKey];
+      const valB = b[sortKey];
+      if (valA === valB) return 0;
+      if (valA == null) return sortAsc ? -1 : 1;
+      if (valB == null) return sortAsc ? 1 : -1;
+      return sortAsc
+        ? String(valA).localeCompare(String(valB))
+        : String(valB).localeCompare(String(valA));
+    });
+  }
+
+  const handleSort = (col: string) => {
+    if (sortKey === col) {
+      setSortAsc(!sortAsc);
+    } else {
+      setSortKey(col);
+      setSortAsc(true);
+    }
+  };
 
   return (
-    <div style={{ maxHeight: 400, overflow: 'auto' }}>
+    <div style={{ maxHeight: 400, overflowY: "auto" }}>
       <table>
         <thead>
-          {table.getHeaderGroups().map((hg) => (
-            <tr key={hg.id}>
-              {hg.headers.map((header) => (
-                <th
-                  key={header.id}
-                  onClick={header.column.getToggleSortingHandler()}
-                  style={{ cursor: 'pointer' }}
-                >
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                  {{
-                    asc: ' ▲',
-                    desc: ' ▼',
-                  }[header.column.getIsSorted() as string] ?? ''}
-                </th>
-              ))}
-            </tr>
-          ))}
+          <tr>
+            {columns.map((c) => (
+              <th
+                key={c}
+                onClick={() => handleSort(c)}
+                style={{ cursor: "pointer" }}
+              >
+                {c}
+                {sortKey === c ? (sortAsc ? " ▲" : " ▼") : ""}
+              </th>
+            ))}
+          </tr>
         </thead>
         <tbody>
-          {table.getRowModel().rows.map((row) => (
-            <tr key={row.id}>
-              {row.getVisibleCells().map((cell) => (
-                <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+          {sorted.map((r, i) => (
+            <tr key={i}>
+              {columns.map((c) => (
+                <td key={c}>{String(r[c] ?? "")}</td>
               ))}
             </tr>
           ))}
@@ -182,4 +119,67 @@ export default function SmartTable({ rows }: { rows: any[] }) {
     </div>
   );
 }
+
+
+/* Better Scrolling option */
+
+// import * as React from 'react';
+// import { useReactTable, getCoreRowModel, getSortedRowModel, flexRender } from '@tanstack/react-table';
+
+// export default function SmartTable({ rows }: { rows: any[] }) {
+//   const columns = React.useMemo(
+//     () =>
+//       Object.keys(rows[0] ?? {}).map((k) => ({
+//         accessorKey: k,
+//         header: k,
+//       })),
+//     [rows]
+//   );
+
+//   const [sorting, setSorting] = React.useState([]);
+
+//   const table = useReactTable({
+//     data: rows,
+//     columns,
+//     state: { sorting },
+//     onSortingChange: setSorting,
+//     getCoreRowModel: getCoreRowModel(),
+//     getSortedRowModel: getSortedRowModel(),
+//   });
+
+//   return (
+//     <div style={{ maxHeight: 400, overflow: 'auto' }}>
+//       <table>
+//         <thead>
+//           {table.getHeaderGroups().map((hg) => (
+//             <tr key={hg.id}>
+//               {hg.headers.map((header) => (
+//                 <th
+//                   key={header.id}
+//                   onClick={header.column.getToggleSortingHandler()}
+//                   style={{ cursor: 'pointer' }}
+//                 >
+//                   {flexRender(header.column.columnDef.header, header.getContext())}
+//                   {{
+//                     asc: ' ▲',
+//                     desc: ' ▼',
+//                   }[header.column.getIsSorted() as string] ?? ''}
+//                 </th>
+//               ))}
+//             </tr>
+//           ))}
+//         </thead>
+//         <tbody>
+//           {table.getRowModel().rows.map((row) => (
+//             <tr key={row.id}>
+//               {row.getVisibleCells().map((cell) => (
+//                 <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+//               ))}
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// }
 
