@@ -1,6 +1,6 @@
 ---
 id: data-geography-nuances
-title: Data Geography Nuances
+title: Data & Geography Nuances
 sidebar_label: Data & Geography Nuances
 
 ---
