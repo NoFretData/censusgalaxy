@@ -136,7 +136,7 @@ module.exports = {
           id: 'data/percentiles',
           label: 'Percentiles',
         },
-      ],
+      
     },
     {
       type: 'doc',
