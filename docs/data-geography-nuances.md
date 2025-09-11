@@ -1,8 +1,8 @@
 ---
 id: data-geography-nuances
 title: Data Geography Nuances
-sidebar_label: Data Geography Nuances
-hide_title: true
+sidebar_label: Data & Geography Nuances
+
 ---
 
 <details open>
