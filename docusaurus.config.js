@@ -294,10 +294,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://arbazanalytics.github.io',
+  url: 'https://NoFretData.github.io',
   baseUrl: '/censusgalaxy/',
 
-  organizationName: 'ArbazAnalytics',
+  organizationName: 'NoFretData',
   projectName: 'censusgalaxy',
 
   onBrokenLinks: 'throw',
@@ -316,7 +316,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/ArbazAnalytics/censusgalaxy',
+            'https://github.com/NoFretData/censusgalaxy',
         },
         blog: false,
         theme: {
@@ -344,7 +344,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/ArbazAnalytics/censusgalaxy',
+            href: 'https://github.com/NoFretData/censusgalaxy',
             label: 'GitHub',
             position: 'right',
           },
@@ -382,7 +382,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/ArbazAnalytics/censusgalaxy',
+                href: 'https://github.com/NoFretData/censusgalaxy',
               },
             ],
           },
