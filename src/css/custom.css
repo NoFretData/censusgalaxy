@@ -78,6 +78,23 @@
   font-size: 14.5px;
 }
 
+/* Navbar CTA button */
+.navbar-demo-button {
+  background-color: #2b6cb0; /* blue tone */
+  color: #fff !important;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-demo-button:hover {
+  background-color: #1a4e8a;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+
 .theme-doc-sidebar-menu li a {
   font-size: 1.05rem;
   padding: 0.75rem 1rem;
@@ -184,7 +201,10 @@ summary {
   padding-left: 1.5rem;  /* Add space for bigger arrow */
   position: relative;
   color: var(--ifm-heading-color, inherit);
+
 }
+
+
 
 /* Optional hover effect for arrow and text */
 summary:hover::before {
