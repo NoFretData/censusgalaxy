@@ -282,6 +282,125 @@
 // version 3 removing intro, sample, and demo
 
 // @ts-check
+// import {themes as prismThemes} from 'prism-react-renderer';
+
+// /** @type {import('@docusaurus/types').Config} */
+// const config = {
+//   title: 'Census Galaxy',
+//   tagline: 'Documentation',
+//   favicon: 'img/Logo Icon Light.svg',
+
+//   future: {
+//     v4: true,
+//   },
+
+//   url: 'https://NoFretData.github.io',
+//   baseUrl: '/censusgalaxy/',
+
+//   organizationName: 'NoFretData',
+//   projectName: 'censusgalaxy',
+
+//   onBrokenLinks: 'throw',
+//   onBrokenMarkdownLinks: 'warn',
+
+//   i18n: {
+//     defaultLocale: 'en',
+//     locales: ['en'],
+//   },
+
+//   presets: [
+//     [
+//       'classic',
+//       /** @type {import('@docusaurus/preset-classic').Options} */
+//       ({
+//         docs: {
+//           sidebarPath: './sidebars.js',
+//           editUrl:
+//             'https://github.com/NoFretData/censusgalaxy',
+//         },
+//         blog: false,
+//         theme: {
+//           customCss: './src/css/custom.css',
+//         },
+//       }),
+//     ],
+//   ],
+
+//   themeConfig:
+//     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+//     ({
+//       image: 'img/docusaurus-social-card.png',
+//       navbar: {
+//         title: '',
+//         logo: {
+//           alt: 'Census Galaxy Logo',
+//           src: 'img/Logo Text Light.png',
+//         },
+//         items: [
+//           {
+//             type: 'docSidebar',
+//             sidebarId: 'tutorialSidebar',
+//             position: 'left',
+//             label: 'Documentation',
+//           },
+//           {
+//             href: 'https://github.com/NoFretData/censusgalaxy',
+//             label: 'GitHub',
+//             position: 'right',
+//           },
+//         ],
+//       },
+//       footer: {
+//         style: 'dark',
+//         links: [
+//           {
+//             title: 'Docs',
+//             items: [
+//               // Removed intro/tutorial/demo/sample links
+//               // Add other valid doc links here if needed
+//             ],
+//           },
+//           {
+//             title: 'Community',
+//             items: [
+//               {
+//                 label: 'Census Galaxy',
+//                 href: 'https://censusgalaxy.framer.website/',
+//               },
+//               {
+//                 label: 'Discord',
+//                 href: 'https://discordapp.com/invite/docusaurus',
+//               },
+//               {
+//                 label: 'X',
+//                 href: 'https://x.com/docusaurus',
+//               },
+//             ],
+//           },
+//           {
+//             title: 'More',
+//             items: [
+//               {
+//                 label: 'GitHub',
+//                 href: 'https://github.com/NoFretData/censusgalaxy',
+//               },
+//             ],
+//           },
+//         ],
+//         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+//       },
+//       prism: {
+//         theme: prismThemes.github,
+//         darkTheme: prismThemes.dracula,
+//       },
+//     }),
+// };
+
+// export default config;
+
+
+
+// @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -344,6 +463,21 @@ const config = {
             label: 'Documentation',
           },
           {
+            href: 'https://censusgalaxy.framer.website/',
+            label: 'Main Website',
+            position: 'right',
+          },
+          {
+            href: 'mailto:brendan@nofretdata.com',
+            label: 'Contact Us',
+            position: 'right',
+          },
+          {
+            href: 'https://calendly.com/brendan-nofretdata/30min?month=2025-09',
+            label: 'Schedule a Demo',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/NoFretData/censusgalaxy',
             label: 'GitHub',
             position: 'right',
@@ -356,15 +490,14 @@ const config = {
           {
             title: 'Docs',
             items: [
-              // Removed intro/tutorial/demo/sample links
-              // Add other valid doc links here if needed
+              { label: 'Documentation', to: '/docs/quick-start-guide' },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Census Galaxy',
+                label: 'Census Galaxy Website',
                 href: 'https://censusgalaxy.framer.website/',
               },
               {
@@ -381,13 +514,21 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Contact Us',
+                href: 'mailto:brendan@nofretdata.com',
+              },
+              {
+                label: 'Schedule a Demo',
+                href: 'https://calendly.com/brendan-nofretdata/30min?month=2025-09',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/NoFretData/censusgalaxy',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NoFretData. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -397,4 +538,5 @@ const config = {
 };
 
 export default config;
+
 
